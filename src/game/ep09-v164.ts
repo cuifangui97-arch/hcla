@@ -1,4 +1,4 @@
-import canonical from "../../source_package/ep09_complete_v16_4/EP09_COMPLETE_V16_4.md?raw";
+import canonical from "../../stories/source/EP09_COMPLETE_V16_4.md?raw";
 import type { GuestId, ScriptLine } from "./day1-data";
 
 export const ep09Phases = ["INTRO","TRAVEL_ASSIGN","TRAVEL_PLAY","RETURN","GIFT_RULE","GIFT_PLAY","FINAL_DATE_RULE","INVITES","FINAL_DATE_PLAY","TRUTH","INTERVIEW","SMS","EDITING","BROADCAST","COMPLETE"] as const;
