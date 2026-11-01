@@ -31,15 +31,15 @@ export const ep08PairDialogue:Record<string,string[]>={
  "SXH-ZH":["SXH|这张怎么会放到最前面？","ZH|我还没确定。","SXH|那我们再核一遍。","ZH|可以。你看文字，我看照片。","SXH|好。等会儿一起确认。","ZH|这次应该没问题。"]
 };
 const photoSpecs:{id:Ep08PhotoId;owner:GuestId;title:string;asset:string;cp:string;summary:string;lines:string[]}[]=[
- {id:"jy-01",owner:"ZJ",title:"飞机座位同框",asset:"/assets/cp-photos/jiyu/01-flight.jpg",cp:"jiyu",summary:"飞机座位上的同框照片；航班号与日期仅为图片美术信息。",lines:["张极：“这张坐飞机的，旁边的人当时还嫌我太吵。”","节目组：“现在还嫌吗？”","张极：“现在我也吵啊，可能已经习惯了。”"]},
- {id:"jy-02",owner:"ZZY",title:"舞台近距离互动",asset:"/assets/cp-photos/jiyu/02-stage.jpg",cp:"jiyu",summary:"舞台上的近距离互动，呈现共同活动记忆。",lines:["张泽禹：“这个动作我记得。那天结束以后我们还说这个角度看着特别好笑。”","节目组：“你记住的是舞台还是旁边的人？”","张泽禹：“当然先记舞台。你们这个问法很容易让人误会。”"]},
- {id:"jy-03",owner:"ZZY",title:"双人自拍",asset:"/assets/cp-photos/jiyu/03-selfie.jpg",cp:"jiyu",summary:"一张旅途中的自拍，只说明照片中的共同经历。",lines:["张泽禹：“如果让我选一张旅途照片，可能还是机场那张。”","节目组：“为什么？”","张泽禹：“不是拍得多好，是看了知道那时候大家在一起。”"]},
- {id:"jh-01",owner:"ZJ",title:"游乐设施",asset:"/assets/cp-photos/jihang/01-amusement.jpg",cp:"jihang",summary:"游乐设施旁的共同活动照片。",lines:["张极：“那天不是我先喊的啊。”","节目组：“那是谁？”","张极：“这我不能说，不然人家又要拿出来笑我。”","节目组：“你还会想再玩一次吗？”","张极：“可以啊，但别让我坐最外边。”"]},
- {id:"jh-02",owner:"ZH",title:"练习生记录表",asset:"/assets/cp-photos/jihang/02-trainee-record.jpg",cp:"jihang",summary:"一张带手写信息的练习生记录表；模糊字迹不作推断。",lines:["左航：“这张纸还挺有年代感。”","节目组：“你还记得上面写了什么？”","左航：“有的记得，有的早忘了。现在看还有点不好意思。”","节目组：“我们能放大给观众看吗？”","左航：“清楚的部分可以。看不清的别帮我们脑补啊。”"]},
- {id:"jh-03",owner:"ZJ",title:"不同时期互动拼图",asset:"/assets/cp-photos/jihang/03-timeline.jpg",cp:"jihang",summary:"不同时期互动照片组成的拼图，不作为正式X凭证。",lines:["张极：“这么多张挤在一起，你们是把我俩一年拍的都翻出来了？”","节目组：“你觉得哪张最好？”","张极：“你先告诉我是不是要截图做表情包。”"]},
- {id:"mh-01",owner:"ZZY",title:"射箭活动",asset:"/assets/cp-photos/manghou/01-archery.jpg",cp:"manghou",summary:"射箭活动中的双人照片。",lines:["张泽禹：“这张拍得像我特别有把握。”","节目组：“实际呢？”","张泽禹：“实际我在想别把箭射偏。还好照片看不出来。”"]},
- {id:"mh-02",owner:"ZH",title:"红色舞台",asset:"/assets/cp-photos/manghou/02-stage.jpg",cp:"manghou",summary:"红色舞台上的同框画面，不自动证明正式恋爱史。",lines:["左航：“这张灯挺亮。”","节目组：“你想到什么？”","左航：“想到那时候排练完就想找地方坐会儿。站在台上又觉得还能再来一遍。”"]},
- {id:"mh-03",owner:"ZZY",title:"球拍运动",asset:"/assets/cp-photos/manghou/03-rackets.jpg",cp:"manghou",summary:"球拍运动中的双人照片。",lines:["张泽禹：“你们怎么把这个也找来了？”","节目组：“你们俩看着挺认真。”","张泽禹：“比赛的时候确实认真。结束以后就不一定了。”","节目组：“谁输得不服气？”","张泽禹：“这个我不说，留点面子。”"]}
+ {id:"jy-01",owner:"ZJ",title:"飞机座位同框",asset:"./assets/cp-photos/jiyu/01-flight.jpg",cp:"jiyu",summary:"飞机座位上的同框照片；航班号与日期仅为图片美术信息。",lines:["张极：“这张坐飞机的，旁边的人当时还嫌我太吵。”","节目组：“现在还嫌吗？”","张极：“现在我也吵啊，可能已经习惯了。”"]},
+ {id:"jy-02",owner:"ZZY",title:"舞台近距离互动",asset:"./assets/cp-photos/jiyu/02-stage.jpg",cp:"jiyu",summary:"舞台上的近距离互动，呈现共同活动记忆。",lines:["张泽禹：“这个动作我记得。那天结束以后我们还说这个角度看着特别好笑。”","节目组：“你记住的是舞台还是旁边的人？”","张泽禹：“当然先记舞台。你们这个问法很容易让人误会。”"]},
+ {id:"jy-03",owner:"ZZY",title:"双人自拍",asset:"./assets/cp-photos/jiyu/03-selfie.jpg",cp:"jiyu",summary:"一张旅途中的自拍，只说明照片中的共同经历。",lines:["张泽禹：“如果让我选一张旅途照片，可能还是机场那张。”","节目组：“为什么？”","张泽禹：“不是拍得多好，是看了知道那时候大家在一起。”"]},
+ {id:"jh-01",owner:"ZJ",title:"游乐设施",asset:"./assets/cp-photos/jihang/01-amusement.jpg",cp:"jihang",summary:"游乐设施旁的共同活动照片。",lines:["张极：“那天不是我先喊的啊。”","节目组：“那是谁？”","张极：“这我不能说，不然人家又要拿出来笑我。”","节目组：“你还会想再玩一次吗？”","张极：“可以啊，但别让我坐最外边。”"]},
+ {id:"jh-02",owner:"ZH",title:"练习生记录表",asset:"./assets/cp-photos/jihang/02-trainee-record.jpg",cp:"jihang",summary:"一张带手写信息的练习生记录表；模糊字迹不作推断。",lines:["左航：“这张纸还挺有年代感。”","节目组：“你还记得上面写了什么？”","左航：“有的记得，有的早忘了。现在看还有点不好意思。”","节目组：“我们能放大给观众看吗？”","左航：“清楚的部分可以。看不清的别帮我们脑补啊。”"]},
+ {id:"jh-03",owner:"ZJ",title:"不同时期互动拼图",asset:"./assets/cp-photos/jihang/03-timeline.jpg",cp:"jihang",summary:"不同时期互动照片组成的拼图，不作为正式X凭证。",lines:["张极：“这么多张挤在一起，你们是把我俩一年拍的都翻出来了？”","节目组：“你觉得哪张最好？”","张极：“你先告诉我是不是要截图做表情包。”"]},
+ {id:"mh-01",owner:"ZZY",title:"射箭活动",asset:"./assets/cp-photos/manghou/01-archery.jpg",cp:"manghou",summary:"射箭活动中的双人照片。",lines:["张泽禹：“这张拍得像我特别有把握。”","节目组：“实际呢？”","张泽禹：“实际我在想别把箭射偏。还好照片看不出来。”"]},
+ {id:"mh-02",owner:"ZH",title:"红色舞台",asset:"./assets/cp-photos/manghou/02-stage.jpg",cp:"manghou",summary:"红色舞台上的同框画面，不自动证明正式恋爱史。",lines:["左航：“这张灯挺亮。”","节目组：“你想到什么？”","左航：“想到那时候排练完就想找地方坐会儿。站在台上又觉得还能再来一遍。”"]},
+ {id:"mh-03",owner:"ZZY",title:"球拍运动",asset:"./assets/cp-photos/manghou/03-rackets.jpg",cp:"manghou",summary:"球拍运动中的双人照片。",lines:["张泽禹：“你们怎么把这个也找来了？”","节目组：“你们俩看着挺认真。”","张泽禹：“比赛的时候确实认真。结束以后就不一定了。”","节目组：“谁输得不服气？”","张泽禹：“这个我不说，留点面子。”"]}
 ];
 const photoSpeakerIds:Record<string,GuestId>={"朱志鑫":"ZZX","苏新皓":"SXH","张极":"ZJ","张泽禹":"ZZY","左航":"ZH"};
 export function ep08PhotoItems():Ep08Item[]{return photoSpecs.map(x=>({id:x.id,owner:x.owner,title:x.title,asset:x.asset,kind:"photo",cp:x.cp,summary:x.summary,lines:x.lines.map(s=>{const i=s.indexOf("：");const speaker=s.slice(0,i).replace(/^[【[]|[】\]]$/g,"");const text=s.slice(i+1).replace(/^“|”$/g,"");return line(photoSpeakerIds[speaker]??"STAGE",text)}),tags:["photo",x.cp,"shared-growth"]}))}
