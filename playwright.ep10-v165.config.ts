@@ -1,0 +1,2 @@
+import { defineConfig } from "@playwright/test";
+export default defineConfig({testDir:"tests",testMatch:"ep10-v165.spec.ts",timeout:120000,expect:{timeout:10000},workers:1,reporter:"list",use:{baseURL:"http://127.0.0.1:4194",channel:"msedge",headless:true,viewport:{width:412,height:915},serviceWorkers:"block"},webServer:{command:"node node_modules/vite/bin/vite.js --config vite.runtime.config.ts --configLoader runner --host 127.0.0.1 --port 4194 --strictPort",url:"http://127.0.0.1:4194/tests/fixtures/ep10-v165.html",reuseExistingServer:true,timeout:120000}});

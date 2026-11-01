@@ -1,0 +1,8 @@
+import { useState } from "react";
+import { createRoot } from "react-dom/client";
+import { Ep04LetterReading, type Ep04LetterProgress } from "../../src/skins/Ep04LetterReading";
+import { ep04LetterMaterials } from "../../src/game/ep04-letter-data";
+const params=new URLSearchParams(location.search);const mode=params.get("mode")??"A";
+const pairs:[("ZZX"|"SXH"|"ZJ"|"ZZY"|"ZH"),("ZZX"|"SXH"|"ZJ"|"ZZY"|"ZH")][]=mode==="B"?[["ZZX","SXH"],["ZJ","ZH"]]:mode==="C"?[["ZZX","SXH"]]:mode==="D"?[["ZZX","SXH"],["ZZY","ZH"]]:[["ZZX","SXH"],["ZJ","ZZY"]];
+function Harness(){const target=params.get("target") as "ZZX"|"SXH"|"ZJ"|"ZZY"|"ZH"|null;const materialOrder=ep04LetterMaterials(mode,pairs).map(row=>row.recipientId);const completedBefore=target?materialOrder.slice(0,materialOrder.indexOf(target)) : [];const initial=Object.fromEntries(completedBefore.map(id=>[id,{opened:true,expanded:true,read:true,reactionViewed:true,observationViewed:true}])) as Ep04LetterProgress;const [progress,setProgress]=useState<Ep04LetterProgress>(initial);const [recorded,setRecorded]=useState<string[]>([]);const [finished,setFinished]=useState(false);return <main><Ep04LetterReading mode={mode} formalExPairs={pairs} readingOrder={materialOrder} progress={progress} onProgress={setProgress} onRecord={(id,next)=>{setProgress(next);setRecorded(previous=>previous.includes(id)?previous:[...previous,id]);localStorage.setItem("ep04-letter-test",JSON.stringify({progress:next,recorded:[...recorded,id]}))}} onComplete={()=>setFinished(true)}/><output data-testid="recorded">{recorded.length}</output>{finished&&<b>EP04_READ_COMPLETE</b>}</main>}
+createRoot(document.getElementById("root")!).render(<Harness/>);

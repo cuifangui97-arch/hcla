@@ -1,0 +1,32 @@
+node_modules/
+.npm-cache/
+dist/
+dist-player/
+work/
+outputs/
+*.tsbuildinfo
+playwright-report/
+test-results/
+screenshots/
+tmp/
+*.log
+.pw-*.config.ts
+
+# Original delivery bundles, raw reference PDFs, and local authoring prompts.
+# The build inputs needed by a fresh clone live under stories/source/.
+source_package/
+
+backups/
+public/work.json
+references/ios/private/
+
+public/test-work.json
+
+public/blank-work.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.bundle
+

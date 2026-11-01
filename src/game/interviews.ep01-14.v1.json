@@ -1,0 +1,5952 @@
+{
+  "format": "top-transit-love-interview-script-v1",
+  "mode": "fictional",
+  "episodes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "cast": {
+    "zhuzhixin": "朱志鑫",
+    "suxinhao": "苏新皓",
+    "zhangji": "张极",
+    "zhangzeyu": "张泽禹",
+    "zuohang": "左航"
+  },
+  "interviewCount": 70,
+  "interviews": [
+    {
+      "interviewId": "EP01_ZHUZHIXIN",
+      "episode": 1,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep01-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "第一天到得最早，坐在客厅的时候在想什么？"
+        },
+        {
+          "id": "ep01-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "其实在找遥控器，想着至少能放点声音。"
+        },
+        {
+          "id": "ep01-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "真找到了吗？"
+        },
+        {
+          "id": "ep01-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "没找到。后来有人进来就不需要了。"
+        },
+        {
+          "id": "ep01-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "第二个人进门时你看起来挺安静。"
+        },
+        {
+          "id": "ep01-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "本来一个人坐着挺自在的，突然要打招呼，有点不知道从哪儿开始。"
+        },
+        {
+          "id": "ep01-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "今天谁让你笑出来了？"
+        },
+        {
+          "id": "ep01-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "张极。他问我们研究规则研究出什么，我们确实什么都没研究出来。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你第一眼看见新嘉宾，会先注意什么？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你第一眼看见新嘉宾，会先注意什么？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "他有没有地方坐。站着对话有点尴尬。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP01_SUXINHAO",
+      "episode": 1,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep01-suxinhao-t01",
+          "speaker": "pd",
+          "text": "第二个到的时候紧张吗？"
+        },
+        {
+          "id": "ep01-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "主要是门一推开，发现已经有人坐那儿了。"
+        },
+        {
+          "id": "ep01-suxinhao-t03",
+          "speaker": "pd",
+          "text": "你当时怎么突然停了一下？"
+        },
+        {
+          "id": "ep01-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "我在看行李放哪里，总不能把箱子放门口。"
+        },
+        {
+          "id": "ep01-suxinhao-t05",
+          "speaker": "pd",
+          "text": "今天最意外的事情是什么？"
+        },
+        {
+          "id": "ep01-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "做饭分工。五个人第一次一起吃饭，居然没把厨房弄得特别乱。"
+        },
+        {
+          "id": "ep01-suxinhao-t07",
+          "speaker": "pd",
+          "text": "你会主动让别人帮忙吗？"
+        },
+        {
+          "id": "ep01-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "会啊，但有些东西我自己来比较快。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你看见其他人都到齐了才放松吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你看见其他人都到齐了才放松吗？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "对，至少不用一直听门响就抬头。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP01_ZHANGJI",
+      "episode": 1,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep01-zhangji-t01",
+          "speaker": "pd",
+          "text": "你说自己负责活跃气氛，是自封的吗？"
+        },
+        {
+          "id": "ep01-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "谁自封了？是他们先不说话的。"
+        },
+        {
+          "id": "ep01-zhangji-t03",
+          "speaker": "pd",
+          "text": "那你第一句是什么？"
+        },
+        {
+          "id": "ep01-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "我问他们研究规则研究出了什么，结果一个都答不上来。"
+        },
+        {
+          "id": "ep01-zhangji-t05",
+          "speaker": "pd",
+          "text": "今天谁最能接住你的话？"
+        },
+        {
+          "id": "ep01-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "目前都还行，至少没人让我把话说第三遍。"
+        },
+        {
+          "id": "ep01-zhangji-t07",
+          "speaker": "pd",
+          "text": "你想给明天留个目标吗？"
+        },
+        {
+          "id": "ep01-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "争取早起。这个目标难度有点高。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "如果有人一直不接你的玩笑呢？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "如果有人一直不接你的玩笑呢？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "那我换一个，不至于跟一个梗死磕。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP01_ZHANGZEYU",
+      "episode": 1,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep01-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "进门时感觉怎么样？"
+        },
+        {
+          "id": "ep01-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "挺好，就是一下子四个人看着我。"
+        },
+        {
+          "id": "ep01-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "你是不是马上就跟张极说上话了？"
+        },
+        {
+          "id": "ep01-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "他先说我第四个到，我总得回一句吧。"
+        },
+        {
+          "id": "ep01-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "第一次一起吃饭有什么发现？"
+        },
+        {
+          "id": "ep01-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "大家都会客气，客气到菜都快凉了还在让别人先夹。"
+        },
+        {
+          "id": "ep01-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "明天希望怎么相处？"
+        },
+        {
+          "id": "ep01-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "少一点互相让菜，多一点正常吃饭。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你觉得第一天的自己太客气了吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你觉得第一天的自己太客气了吗？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "有一点，夹菜都得先问一圈。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP01_ZUOHANG",
+      "episode": 1,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep01-zuohang-t01",
+          "speaker": "pd",
+          "text": "最后一个入住有压力吗？"
+        },
+        {
+          "id": "ep01-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "压力谈不上，就是走进来发现每个人都坐好了。"
+        },
+        {
+          "id": "ep01-zuohang-t03",
+          "speaker": "pd",
+          "text": "有人让你比较放松吗？"
+        },
+        {
+          "id": "ep01-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "张极说没等多久，虽然我不确定是真是假。"
+        },
+        {
+          "id": "ep01-zuohang-t05",
+          "speaker": "pd",
+          "text": "今天最想吐槽什么？"
+        },
+        {
+          "id": "ep01-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "找杯子。新的地方什么东西都得问。"
+        },
+        {
+          "id": "ep01-zuohang-t07",
+          "speaker": "pd",
+          "text": "明天想做什么？"
+        },
+        {
+          "id": "ep01-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "先记住厨房柜子哪边放杯子。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你有没有假装自己不紧张？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你有没有假装自己不紧张？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "有啊，不过我装得应该还行。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP02_ZHUZHIXIN",
+      "episode": 2,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep02-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "今天早上有什么印象？"
+        },
+        {
+          "id": "ep02-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "厨房比我想象中热闹，我还以为大家都睡不醒。"
+        },
+        {
+          "id": "ep02-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "你早餐吃得怎么样？"
+        },
+        {
+          "id": "ep02-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "还可以。我比较擅长吃，不擅长参与做饭。"
+        },
+        {
+          "id": "ep02-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "今天采购回来后大家聊了些什么？"
+        },
+        {
+          "id": "ep02-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "主要在看他们买了多少东西，感觉什么都想往冰箱塞。"
+        },
+        {
+          "id": "ep02-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "那你今天最想给谁打分？"
+        },
+        {
+          "id": "ep02-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "给冰箱打分吧，它今天工作量最大。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "如果今天不用做任务，你会干什么？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "如果今天不用做任务，你会干什么？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "找个安静地方把东西都放整齐。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal",
+      "conditionalInsert": {
+        "predicate": "ep02.events.includes(\"shopping_showcase\")",
+        "question": "你真的看过他们展示购物成果吗？",
+        "yes": "看过，东西一件件往外拿，挺夸张的。",
+        "no": "没有，我只是看见厨房一下多了很多袋子。"
+      }
+    },
+    {
+      "interviewId": "EP02_SUXINHAO",
+      "episode": 2,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep02-suxinhao-t01",
+          "speaker": "pd",
+          "text": "第二天有什么变化？"
+        },
+        {
+          "id": "ep02-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "至少我知道杯子在哪儿了，不用再问三个人。"
+        },
+        {
+          "id": "ep02-suxinhao-t03",
+          "speaker": "pd",
+          "text": "早餐是你准备的吗？"
+        },
+        {
+          "id": "ep02-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "我帮忙看了冰箱，最后也没完全按计划来。"
+        },
+        {
+          "id": "ep02-suxinhao-t05",
+          "speaker": "pd",
+          "text": "下午小屋有什么小插曲？"
+        },
+        {
+          "id": "ep02-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "整理东西的时候总有人把东西放错位置，找起来挺热闹。"
+        },
+        {
+          "id": "ep02-suxinhao-t07",
+          "speaker": "pd",
+          "text": "你对明天有什么期待？"
+        },
+        {
+          "id": "ep02-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "希望节目组不要安排我们连续三顿自己做。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你最不喜欢大家把什么放错位置？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你最不喜欢大家把什么放错位置？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "杯子。早上找不到真的很影响效率。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP02_ZHANGJI",
+      "episode": 2,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep02-zhangji-t01",
+          "speaker": "pd",
+          "text": "今天最辛苦的是什么？"
+        },
+        {
+          "id": "ep02-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "采购清单。看着不长，真找起来挺费时间。"
+        },
+        {
+          "id": "ep02-zhangji-t03",
+          "speaker": "pd",
+          "text": "你是不是往篮子里加了计划外的东西？"
+        },
+        {
+          "id": "ep02-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "先声明，有的真的很实用。"
+        },
+        {
+          "id": "ep02-zhangji-t05",
+          "speaker": "pd",
+          "text": "比如？"
+        },
+        {
+          "id": "ep02-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "零食。零食怎么不实用了？"
+        },
+        {
+          "id": "ep02-zhangji-t07",
+          "speaker": "pd",
+          "text": "明天还想出门吗？"
+        },
+        {
+          "id": "ep02-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "想，但最好让我自己选买什么。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你有没有后悔采购清单里的某样东西？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你有没有后悔采购清单里的某样东西？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "零食不算。下次少买一个饮料吧。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal",
+      "conditionalInsert": {
+        "predicate": "ep02.roles.shopping.includes(\"zhangji\")",
+        "question": "你刚才说清单费时间，是亲自采购的时候吗？",
+        "yes": "对，进店以前感觉十分钟就能买完。",
+        "no": "我没去超市，是听回来的人讲清单有多长。"
+      }
+    },
+    {
+      "interviewId": "EP02_ZHANGZEYU",
+      "episode": 2,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep02-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "第二天还会有第一次见面的尴尬吗？"
+        },
+        {
+          "id": "ep02-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "没有了，至少不用五个人轮流报名字。"
+        },
+        {
+          "id": "ep02-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "那今天你觉得谁最忙？"
+        },
+        {
+          "id": "ep02-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "厨房那边一直有人收拾，我路过两次都有人在洗东西。"
+        },
+        {
+          "id": "ep02-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "你有没有帮忙？"
+        },
+        {
+          "id": "ep02-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "帮了。虽然我后来又被安排去搬东西。"
+        },
+        {
+          "id": "ep02-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "明天的愿望？"
+        },
+        {
+          "id": "ep02-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "大家别再说“随便吃点”，最后又买一大堆。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "为什么你总能发现餐桌上的小事？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "为什么你总能发现餐桌上的小事？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "坐在那儿不看菜还能看什么？"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP02_ZUOHANG",
+      "episode": 2,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep02-zuohang-t01",
+          "speaker": "pd",
+          "text": "今天住下来习惯了吗？"
+        },
+        {
+          "id": "ep02-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "差不多，终于知道东西都在哪儿。"
+        },
+        {
+          "id": "ep02-zuohang-t03",
+          "speaker": "pd",
+          "text": "你下午在阳台待了会儿？"
+        },
+        {
+          "id": "ep02-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "嗯，里面热闹的时候出去透口气挺好的。"
+        },
+        {
+          "id": "ep02-zuohang-t05",
+          "speaker": "pd",
+          "text": "有人来找你说话，你介意吗？"
+        },
+        {
+          "id": "ep02-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "不介意。只要不是让我马上做选择题。"
+        },
+        {
+          "id": "ep02-zuohang-t07",
+          "speaker": "pd",
+          "text": "明天最想做什么？"
+        },
+        {
+          "id": "ep02-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "如果能晚点起床就好了。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "如果阳台一直有人，你还会出去吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "如果阳台一直有人，你还会出去吗？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "会啊，打个招呼再坐下就好了。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP03_ZHUZHIXIN",
+      "episode": 3,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep03-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "第一次正式约会，今天最不一样的是什么？"
+        },
+        {
+          "id": "ep03-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "比五个人一起聊天容易停下来想自己的话。"
+        },
+        {
+          "id": "ep03-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "那有冷场吗？"
+        },
+        {
+          "id": "ep03-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "有一两次，不过不是一直有人说话才算舒服吧。"
+        },
+        {
+          "id": "ep03-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "有没有哪一刻让你想早点回小屋？"
+        },
+        {
+          "id": "ep03-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "走累了的时候。这个回答是不是有点不浪漫？"
+        },
+        {
+          "id": "ep03-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "今天会想起以前吗？"
+        },
+        {
+          "id": "ep03-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "会想到以前出去玩的事，但我现在更想看眼前发生什么。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "如果能重新选择今天的地点？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "如果能重新选择今天的地点？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "也不一定换，至少现在知道哪里比较适合聊天。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal",
+      "conditionalInsert": {
+        "predicate": "ep03.datePairs.includes(\"zhuzhixin\")",
+        "question": "你今天亲自出门约会了吗？",
+        "yes": "出去了，比想象中自在一点。",
+        "no": "我今天留守，最有感觉的是大家都回来以后又坐到一起。"
+      }
+    },
+    {
+      "interviewId": "EP03_SUXINHAO",
+      "episode": 3,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep03-suxinhao-t01",
+          "speaker": "pd",
+          "text": "你对约会安排满意吗？"
+        },
+        {
+          "id": "ep03-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "挺满意的，至少任务规则很清楚。"
+        },
+        {
+          "id": "ep03-suxinhao-t03",
+          "speaker": "pd",
+          "text": "你还在算时间？"
+        },
+        {
+          "id": "ep03-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "没有，我是看有没有人等我们回来吃饭。"
+        },
+        {
+          "id": "ep03-suxinhao-t05",
+          "speaker": "pd",
+          "text": "你更看重约会中什么？"
+        },
+        {
+          "id": "ep03-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "能不能好好相处，不用硬找话题。"
+        },
+        {
+          "id": "ep03-suxinhao-t07",
+          "speaker": "pd",
+          "text": "今晚回小屋的感觉呢？"
+        },
+        {
+          "id": "ep03-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "有人在等着一起吃晚饭，挺好的。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你有没有提前设想约会流程？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你有没有提前设想约会流程？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "有想过，但计划不可能全按着来。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP03_ZHANGJI",
+      "episode": 3,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep03-zhangji-t01",
+          "speaker": "pd",
+          "text": "第一场约会怎么样？"
+        },
+        {
+          "id": "ep03-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "好玩啊，就是我差点把它当成一次普通出门。"
+        },
+        {
+          "id": "ep03-zhangji-t03",
+          "speaker": "pd",
+          "text": "你觉得约会和普通出门差在哪儿？"
+        },
+        {
+          "id": "ep03-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "你们在旁边架摄影机，差别可大了。"
+        },
+        {
+          "id": "ep03-zhangji-t05",
+          "speaker": "pd",
+          "text": "有没有想让对方记住的细节？"
+        },
+        {
+          "id": "ep03-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "希望记住我不是全程只会开玩笑。"
+        },
+        {
+          "id": "ep03-zhangji-t07",
+          "speaker": "pd",
+          "text": "那你认真了吗？"
+        },
+        {
+          "id": "ep03-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "认真了三四分钟，其他时间也认真，只是看起来不像。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "约会里你认真说话是什么样？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "约会里你认真说话是什么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "就像现在这样。你是不是觉得我每次都在逗你？"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP03_ZHANGZEYU",
+      "episode": 3,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep03-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "今天的约会对你来说意味着什么？"
+        },
+        {
+          "id": "ep03-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "至少能知道两个人单独相处会不会别扭。"
+        },
+        {
+          "id": "ep03-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "跟群聊最大的区别？"
+        },
+        {
+          "id": "ep03-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "五个人的时候你可以安静一下，单独的时候对方会等你接话。"
+        },
+        {
+          "id": "ep03-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "你喜欢这种感觉吗？"
+        },
+        {
+          "id": "ep03-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "看跟谁吧。舒服的话时间过得挺快。"
+        },
+        {
+          "id": "ep03-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "回来以后有什么发现？"
+        },
+        {
+          "id": "ep03-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "留在家里的人好像也过得挺充实。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "如果对方没按你想的回应？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "如果对方没按你想的回应？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "那就问啊，不然怎么知道。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP03_ZUOHANG",
+      "episode": 3,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep03-zuohang-t01",
+          "speaker": "pd",
+          "text": "约会第一天，你紧张吗？"
+        },
+        {
+          "id": "ep03-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "出门前有一点，出去以后还好。"
+        },
+        {
+          "id": "ep03-zuohang-t03",
+          "speaker": "pd",
+          "text": "为什么紧张？"
+        },
+        {
+          "id": "ep03-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "想着要不要准备话题，后来发现没必要。"
+        },
+        {
+          "id": "ep03-zuohang-t05",
+          "speaker": "pd",
+          "text": "你习惯主动定地点吗？"
+        },
+        {
+          "id": "ep03-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "可以，但不喜欢两个人都只说“随便”。"
+        },
+        {
+          "id": "ep03-zuohang-t07",
+          "speaker": "pd",
+          "text": "今天最开心的一刻？"
+        },
+        {
+          "id": "ep03-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "路上聊到一件特别小的事，两个人都笑了。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你觉得今天更多是了解还是被了解？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你觉得今天更多是了解还是被了解？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "一半一半吧，我也没打算只当听众。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP04_ZHUZHIXIN",
+      "episode": 4,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep04-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "读完今天的信，你第一反应是什么？"
+        },
+        {
+          "id": "ep04-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "字还挺多的。我本来以为就是两三句介绍。"
+        },
+        {
+          "id": "ep04-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "哪一句让你停了一下？"
+        },
+        {
+          "id": "ep04-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "讲我安静的时候那个，写的人有点太会观察。"
+        },
+        {
+          "id": "ep04-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "你认同吗？"
+        },
+        {
+          "id": "ep04-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "认同一部分。其实我也没一直那么安静。"
+        },
+        {
+          "id": "ep04-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "你希望别人怎么读这封信？"
+        },
+        {
+          "id": "ep04-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "别把我当成需要时刻被研究的人就行。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你想知道写信人的表情吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你想知道写信人的表情吗？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "不想，知道了可能更难读下去。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP04_SUXINHAO",
+      "episode": 4,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep04-suxinhao-t01",
+          "speaker": "pd",
+          "text": "读信时为什么笑了？"
+        },
+        {
+          "id": "ep04-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "有一句话说得挺像我，我自己都没想过那样描述。"
+        },
+        {
+          "id": "ep04-suxinhao-t03",
+          "speaker": "pd",
+          "text": "你觉得写信的人了解你吗？"
+        },
+        {
+          "id": "ep04-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "了解，但不是说他每次都猜得对。"
+        },
+        {
+          "id": "ep04-suxinhao-t05",
+          "speaker": "pd",
+          "text": "会想反驳哪一句？"
+        },
+        {
+          "id": "ep04-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "说我总想把事情做完。这个是真的，但我也会偷懒。"
+        },
+        {
+          "id": "ep04-suxinhao-t07",
+          "speaker": "pd",
+          "text": "你最希望观众知道什么？"
+        },
+        {
+          "id": "ep04-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "读信很尴尬，尤其大家都盯着你的时候。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你想把信折起来收好还是放在桌上？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你想把信折起来收好还是放在桌上？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "先收起来，桌子上还有别人的。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP04_ZHANGJI",
+      "episode": 4,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep04-zhangji-t01",
+          "speaker": "pd",
+          "text": "你刚刚不是说不紧张吗？"
+        },
+        {
+          "id": "ep04-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "我没说不紧张，我说的是还能读。"
+        },
+        {
+          "id": "ep04-zhangji-t03",
+          "speaker": "pd",
+          "text": "你读别人的介绍卡会观察表情吗？"
+        },
+        {
+          "id": "ep04-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "会，尤其有人读到一半突然笑了。"
+        },
+        {
+          "id": "ep04-zhangji-t05",
+          "speaker": "pd",
+          "text": "有没有哪封让你印象很深？"
+        },
+        {
+          "id": "ep04-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "有，但我先不说哪一封。"
+        },
+        {
+          "id": "ep04-zhangji-t07",
+          "speaker": "pd",
+          "text": "为什么？"
+        },
+        {
+          "id": "ep04-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "我怕说完你们明天就给我加任务。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你有偷偷观察别人的信吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你有偷偷观察别人的信吗？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "没有偷看，我看的是他们脸。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP04_ZHANGZEYU",
+      "episode": 4,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep04-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "听其他人读信时你在想什么？"
+        },
+        {
+          "id": "ep04-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "写的人都挺会抓特点的。"
+        },
+        {
+          "id": "ep04-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "自己的信让你意外吗？"
+        },
+        {
+          "id": "ep04-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "有些地方意外，有些地方倒挺像。"
+        },
+        {
+          "id": "ep04-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "你会特别在意署名吗？"
+        },
+        {
+          "id": "ep04-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "节目就是不让看署名啊，我在意也没用。"
+        },
+        {
+          "id": "ep04-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "今天最轻松的时候？"
+        },
+        {
+          "id": "ep04-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "五个人把信读完以后终于能喝水的时候。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你在信里最在意夸奖还是提醒？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你在信里最在意夸奖还是提醒？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "提醒吧，夸得太过我会不自在。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP04_ZUOHANG",
+      "episode": 4,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep04-zuohang-t01",
+          "speaker": "pd",
+          "text": "这封信读起来轻松吗？"
+        },
+        {
+          "id": "ep04-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "不轻松。很多话面对面说可能还没那么难。"
+        },
+        {
+          "id": "ep04-zuohang-t03",
+          "speaker": "pd",
+          "text": "你最在意什么？"
+        },
+        {
+          "id": "ep04-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "写信人有没有把我当成一个完整的人，而不是某种印象。"
+        },
+        {
+          "id": "ep04-zuohang-t05",
+          "speaker": "pd",
+          "text": "有句话你想解释吗？"
+        },
+        {
+          "id": "ep04-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "等节目放出来再说，我不想现在替人家改作文。"
+        },
+        {
+          "id": "ep04-zuohang-t07",
+          "speaker": "pd",
+          "text": "你会保留这封信吗？"
+        },
+        {
+          "id": "ep04-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "会。毕竟写了这么长。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "如果信里有错字你会指出来吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "如果信里有错字你会指出来吗？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "不会，当时能写出来就不容易了。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP05_ZHUZHIXIN",
+      "episode": 5,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep05-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "30秒对视，你一直在笑吗？"
+        },
+        {
+          "id": "ep05-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "没有一直。你们剪掉前面就显得一直笑了。"
+        },
+        {
+          "id": "ep05-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "为什么忍不住？"
+        },
+        {
+          "id": "ep05-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "因为谁都不说话，太奇怪了。"
+        },
+        {
+          "id": "ep05-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "对视能让你更了解一个人吗？"
+        },
+        {
+          "id": "ep05-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "未必，看30秒哪能看懂人。"
+        },
+        {
+          "id": "ep05-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "那今天有没有开心的事？"
+        },
+        {
+          "id": "ep05-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "计时结束那一刻，我终于能看别处了。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你觉得最难的是不笑还是不眨眼？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你觉得最难的是不笑还是不眨眼？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "不笑，眨眼本来就可以吧。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP05_SUXINHAO",
+      "episode": 5,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep05-suxinhao-t01",
+          "speaker": "pd",
+          "text": "对视任务比想象中难吗？"
+        },
+        {
+          "id": "ep05-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "我以为挺容易，结果对面一笑我就想笑。"
+        },
+        {
+          "id": "ep05-suxinhao-t03",
+          "speaker": "pd",
+          "text": "你会故意盯着对方不动？"
+        },
+        {
+          "id": "ep05-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "那不是任务要求吗？"
+        },
+        {
+          "id": "ep05-suxinhao-t05",
+          "speaker": "pd",
+          "text": "你注意到谁最先败下阵来？"
+        },
+        {
+          "id": "ep05-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "你们不是有计时吗，为什么问我？"
+        },
+        {
+          "id": "ep05-suxinhao-t07",
+          "speaker": "pd",
+          "text": "你还想再来一次吗？"
+        },
+        {
+          "id": "ep05-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "先让我歇会儿眼睛。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你为什么一直看计时器？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你为什么一直看计时器？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "我想知道什么时候能正常说话。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP05_ZHANGJI",
+      "episode": 5,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep05-zhangji-t01",
+          "speaker": "pd",
+          "text": "今天最能让你破功的是什么？"
+        },
+        {
+          "id": "ep05-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "有人一本正经地说别笑，结果自己先笑。"
+        },
+        {
+          "id": "ep05-zhangji-t03",
+          "speaker": "pd",
+          "text": "你有没有故意逗别人？"
+        },
+        {
+          "id": "ep05-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "我正常坐着也算逗的话，那没办法。"
+        },
+        {
+          "id": "ep05-zhangji-t05",
+          "speaker": "pd",
+          "text": "你觉得这个任务有用吗？"
+        },
+        {
+          "id": "ep05-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "有，至少发现谁最怕尴尬。"
+        },
+        {
+          "id": "ep05-zhangji-t07",
+          "speaker": "pd",
+          "text": "你是哪一类？"
+        },
+        {
+          "id": "ep05-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "我负责让别人不尴尬。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你会故意让人分心吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你会故意让人分心吗？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "看对象，别人太紧张我会开个玩笑。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP05_ZHANGZEYU",
+      "episode": 5,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep05-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "你怎么评价今天的对视？"
+        },
+        {
+          "id": "ep05-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "像学校里谁先笑谁输的小游戏。"
+        },
+        {
+          "id": "ep05-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "有谁让你意外吗？"
+        },
+        {
+          "id": "ep05-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "平时很安静的人，今天反而特别能坚持。"
+        },
+        {
+          "id": "ep05-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "你会因此重新认识对方吗？"
+        },
+        {
+          "id": "ep05-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "不会只凭这个吧，但挺有意思。"
+        },
+        {
+          "id": "ep05-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "下一次还参加吗？"
+        },
+        {
+          "id": "ep05-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "可以，前提是别让我们对视十分钟。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你觉得30秒里能读出多少东西？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你觉得30秒里能读出多少东西？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "能读出有人快忍不住笑了。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP05_ZUOHANG",
+      "episode": 5,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep05-zuohang-t01",
+          "speaker": "pd",
+          "text": "你今天看起来挺冷静。"
+        },
+        {
+          "id": "ep05-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "因为我把它当计时任务，不然太容易笑。"
+        },
+        {
+          "id": "ep05-zuohang-t03",
+          "speaker": "pd",
+          "text": "你注意的是眼睛还是表情？"
+        },
+        {
+          "id": "ep05-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "我注意计时员什么时候喊结束。"
+        },
+        {
+          "id": "ep05-zuohang-t05",
+          "speaker": "pd",
+          "text": "完全没有别的感觉？"
+        },
+        {
+          "id": "ep05-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "有啊，灯挺亮的。"
+        },
+        {
+          "id": "ep05-zuohang-t07",
+          "speaker": "pd",
+          "text": "你是不是在躲问题？"
+        },
+        {
+          "id": "ep05-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "你也发现了。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你有没有假装没听见计时员？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你有没有假装没听见计时员？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "没有，我只是在等他说清楚。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP06_ZHUZHIXIN",
+      "episode": 6,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep06-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "第二次约会比第一次自然吗？"
+        },
+        {
+          "id": "ep06-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "路线没那么陌生了，但也不代表就知道怎么聊天。"
+        },
+        {
+          "id": "ep06-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "今天有没有主动提议做什么？"
+        },
+        {
+          "id": "ep06-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "有些地方我想自己试，不想一直让别人教。"
+        },
+        {
+          "id": "ep06-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "对方有没有听进去？"
+        },
+        {
+          "id": "ep06-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "有。那一刻还挺舒服的。"
+        },
+        {
+          "id": "ep06-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "你希望下次有什么不同？"
+        },
+        {
+          "id": "ep06-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "不用每次都给我们规定任务吧。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你更喜欢安排好的活动还是随便走？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你更喜欢安排好的活动还是随便走？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "随便走也行，前提是别走到找不到回去的路。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP06_SUXINHAO",
+      "episode": 6,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep06-suxinhao-t01",
+          "speaker": "pd",
+          "text": "第二轮约会你想先做什么？"
+        },
+        {
+          "id": "ep06-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "先确认约的地点开不开门，别白跑。"
+        },
+        {
+          "id": "ep06-suxinhao-t03",
+          "speaker": "pd",
+          "text": "你是不是特别在意计划？"
+        },
+        {
+          "id": "ep06-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "不是所有事都要计划，至少得知道去哪。"
+        },
+        {
+          "id": "ep06-suxinhao-t05",
+          "speaker": "pd",
+          "text": "今天有没有哪件事做得比第一次好？"
+        },
+        {
+          "id": "ep06-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "遇到别人想自己试的时候，我会先问要不要帮忙。"
+        },
+        {
+          "id": "ep06-suxinhao-t07",
+          "speaker": "pd",
+          "text": "这个改变容易吗？"
+        },
+        {
+          "id": "ep06-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "说实话，刚开始不太习惯。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "对方拒绝你帮忙，你会尴尬吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "对方拒绝你帮忙，你会尴尬吗？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "不会，就是有点不习惯。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal",
+      "conditionalInsert": {
+        "predicate": "ep06.datePairs.some(pair=>pair.includes(\"suxinhao\"))",
+        "question": "你说的约会流程，今天自己参与了吗？",
+        "yes": "参与了，所以才知道计划不一定跟得上变化。",
+        "no": "我今天没出门，就在小屋负责把事情安排好。"
+      }
+    },
+    {
+      "interviewId": "EP06_ZHANGJI",
+      "episode": 6,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep06-zhangji-t01",
+          "speaker": "pd",
+          "text": "这次出门你还一直开玩笑吗？"
+        },
+        {
+          "id": "ep06-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "这取决于同行的人接不接我的话。"
+        },
+        {
+          "id": "ep06-zhangji-t03",
+          "speaker": "pd",
+          "text": "如果对方不接呢？"
+        },
+        {
+          "id": "ep06-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "那我也会安静一下，我又不是广播。"
+        },
+        {
+          "id": "ep06-zhangji-t05",
+          "speaker": "pd",
+          "text": "有没有哪次沉默还挺舒服？"
+        },
+        {
+          "id": "ep06-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "有，路上听音乐那段。"
+        },
+        {
+          "id": "ep06-zhangji-t07",
+          "speaker": "pd",
+          "text": "还想跟同一个人再出去吗？"
+        },
+        {
+          "id": "ep06-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "不排除，先看下次导演怎么安排。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你是不是故意把约会说成外出？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你是不是故意把约会说成外出？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "那不然怎么说，任务还没结束呢。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP06_ZHANGZEYU",
+      "episode": 6,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep06-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "第二次约会和上次有什么区别？"
+        },
+        {
+          "id": "ep06-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "这次知道自己想聊什么了。"
+        },
+        {
+          "id": "ep06-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "你准备了话题？"
+        },
+        {
+          "id": "ep06-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "没写提纲，就是之前有句话没接完。"
+        },
+        {
+          "id": "ep06-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "后来接上了吗？"
+        },
+        {
+          "id": "ep06-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "接上了一半，剩下的可能要以后说。"
+        },
+        {
+          "id": "ep06-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "觉得可惜吗？"
+        },
+        {
+          "id": "ep06-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "还好，十四天又不是只有今天。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你觉得熟人反而更难约会吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你觉得熟人反而更难约会吗？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "有时候更难，太知道对方以前什么样了。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP06_ZUOHANG",
+      "episode": 6,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep06-zuohang-t01",
+          "speaker": "pd",
+          "text": "今天你更愿意主动一点了吗？"
+        },
+        {
+          "id": "ep06-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "看情况。有些事情主动一点比较省得猜。"
+        },
+        {
+          "id": "ep06-zuohang-t03",
+          "speaker": "pd",
+          "text": "比如什么？"
+        },
+        {
+          "id": "ep06-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "比如路线不清楚，就直接问去哪儿。"
+        },
+        {
+          "id": "ep06-zuohang-t05",
+          "speaker": "pd",
+          "text": "约会有不自在的时候吗？"
+        },
+        {
+          "id": "ep06-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "有啊，但不自在也可以继续聊天。"
+        },
+        {
+          "id": "ep06-zuohang-t07",
+          "speaker": "pd",
+          "text": "晚上想做什么？"
+        },
+        {
+          "id": "ep06-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "回去吃饭，然后休息。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "今天你觉得最自在的片刻？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "今天你觉得最自在的片刻？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "不用一直找话说的时候。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP07_ZHUZHIXIN",
+      "episode": 7,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep07-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "今天合作的时候有争论吗？"
+        },
+        {
+          "id": "ep07-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "有一点，节奏快慢不一样。"
+        },
+        {
+          "id": "ep07-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "最后怎么定的？"
+        },
+        {
+          "id": "ep07-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "试了两遍，听起来哪种好就用哪种。"
+        },
+        {
+          "id": "ep07-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "你觉得谁让你意外？"
+        },
+        {
+          "id": "ep07-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "本来以为会坚持自己想法的人，今天愿意先听别人讲。"
+        },
+        {
+          "id": "ep07-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "那你呢？"
+        },
+        {
+          "id": "ep07-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "我也尽量把原因讲清楚了。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你会不会因为别人不同意你的想法就不开心？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你会不会因为别人不同意你的想法就不开心？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "会有一点，但可以试完再判断。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP07_SUXINHAO",
+      "episode": 7,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep07-suxinhao-t01",
+          "speaker": "pd",
+          "text": "大家排练的时候你最忙什么？"
+        },
+        {
+          "id": "ep07-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "对流程。我老怕有人还没准备好就开始。"
+        },
+        {
+          "id": "ep07-suxinhao-t03",
+          "speaker": "pd",
+          "text": "有没有被提醒别太紧张？"
+        },
+        {
+          "id": "ep07-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "有，结果提醒我的人自己也在确认。"
+        },
+        {
+          "id": "ep07-suxinhao-t05",
+          "speaker": "pd",
+          "text": "今天学到什么？"
+        },
+        {
+          "id": "ep07-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "有时候别人说想留一点空白，不是拖延，是有自己的想法。"
+        },
+        {
+          "id": "ep07-suxinhao-t07",
+          "speaker": "pd",
+          "text": "晚上会继续练吗？"
+        },
+        {
+          "id": "ep07-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "如果大家都愿意，可以再来一遍。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你能接受别人来指挥你吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你能接受别人来指挥你吗？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "能，前提是说清楚为什么。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP07_ZHANGJI",
+      "episode": 7,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep07-zhangji-t01",
+          "speaker": "pd",
+          "text": "今天合作有没有比想象中顺利？"
+        },
+        {
+          "id": "ep07-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "挺顺利的，至少没人把设备弄丢。"
+        },
+        {
+          "id": "ep07-zhangji-t03",
+          "speaker": "pd",
+          "text": "你刚刚老在找什么？"
+        },
+        {
+          "id": "ep07-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "我的水，放一边就找不到了。"
+        },
+        {
+          "id": "ep07-zhangji-t05",
+          "speaker": "pd",
+          "text": "今天谁的表现你想夸夸？"
+        },
+        {
+          "id": "ep07-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "大家都挺投入，那个临场接上的部分尤其不错。"
+        },
+        {
+          "id": "ep07-zhangji-t07",
+          "speaker": "pd",
+          "text": "你自己呢？"
+        },
+        {
+          "id": "ep07-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "我也值得一个掌声吧。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你是不是每次排练都要找水？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你是不是每次排练都要找水？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "我只是忘了放哪儿，真的。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP07_ZHANGZEYU",
+      "episode": 7,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep07-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "今天排练最有意思的瞬间？"
+        },
+        {
+          "id": "ep07-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "有人说再来一遍，结果我们真来了三遍。"
+        },
+        {
+          "id": "ep07-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "你会不耐烦吗？"
+        },
+        {
+          "id": "ep07-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "不会，做好了就是不一样。"
+        },
+        {
+          "id": "ep07-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "有没有和以前练习的感觉相似？"
+        },
+        {
+          "id": "ep07-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "有一些，但现在大家处理问题的方法不一样。"
+        },
+        {
+          "id": "ep07-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "你喜欢这种变化吗？"
+        },
+        {
+          "id": "ep07-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "挺好的，至少会直接说哪里需要调整。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你会不会偷偷在意哪段更好听？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你会不会偷偷在意哪段更好听？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "当然会，听过就知道有区别。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP07_ZUOHANG",
+      "episode": 7,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep07-zuohang-t01",
+          "speaker": "pd",
+          "text": "你下午怎么还没走？"
+        },
+        {
+          "id": "ep07-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "那段还没弄完，我想听听最后效果。"
+        },
+        {
+          "id": "ep07-zuohang-t03",
+          "speaker": "pd",
+          "text": "没有觉得累？"
+        },
+        {
+          "id": "ep07-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "累肯定累，但就差一点了。"
+        },
+        {
+          "id": "ep07-zuohang-t05",
+          "speaker": "pd",
+          "text": "今天合作谁最认真？"
+        },
+        {
+          "id": "ep07-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "这个不好排，大家认真在不同地方。"
+        },
+        {
+          "id": "ep07-zuohang-t07",
+          "speaker": "pd",
+          "text": "你是不是故意不排名？"
+        },
+        {
+          "id": "ep07-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "嗯，不然回去不好吃饭。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "如果别人说你太安静？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "如果别人说你太安静？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "我在听，安静不是没参与。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP08_ZHUZHIXIN",
+      "episode": 8,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep08-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "进X Room之前你觉得自己会怎么样？"
+        },
+        {
+          "id": "ep08-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "以为就是看看照片，没想到里面还有那么多小东西。"
+        },
+        {
+          "id": "ep08-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "哪个东西让你停得最久？"
+        },
+        {
+          "id": "ep08-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "有一件放在角落，我当时都快忘了它还在。"
+        },
+        {
+          "id": "ep08-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "有想马上讲出来的事吗？"
+        },
+        {
+          "id": "ep08-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "没有。有些东西我想再看一遍。"
+        },
+        {
+          "id": "ep08-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "如果能带走一样东西？"
+        },
+        {
+          "id": "ep08-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "我可能不会带，知道它还在那里就够了。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "有没有一个物件你没敢立刻拿起来？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "有没有一个物件你没敢立刻拿起来？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "有，怕一碰就想起太多。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal",
+      "conditionalInsert": {
+        "predicate": "ep08.propsViewed.includes(\"birthday-blindbox\")",
+        "question": "你看到那套盲盒了吗？",
+        "yes": "看到了。那一整套一直放着，每年生日只拆一个。",
+        "no": "我还没打开那层柜子，有些东西我想慢慢看。"
+      }
+    },
+    {
+      "interviewId": "EP08_SUXINHAO",
+      "episode": 8,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep08-suxinhao-t01",
+          "speaker": "pd",
+          "text": "X Room和想象中一样吗？"
+        },
+        {
+          "id": "ep08-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "不太一样，我以为东西会摆得很正式。"
+        },
+        {
+          "id": "ep08-suxinhao-t03",
+          "speaker": "pd",
+          "text": "看到以前的字迹是什么感觉？"
+        },
+        {
+          "id": "ep08-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "有一点不适应，原来当时写字会那么用力。"
+        },
+        {
+          "id": "ep08-suxinhao-t05",
+          "speaker": "pd",
+          "text": "你后悔没说出口的话吗？"
+        },
+        {
+          "id": "ep08-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "后悔过，但现在也不能随便替以前的自己回答。"
+        },
+        {
+          "id": "ep08-suxinhao-t07",
+          "speaker": "pd",
+          "text": "你愿意回去再看看吗？"
+        },
+        {
+          "id": "ep08-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "可以，晚一点。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你看到旧字迹会先看什么？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你看到旧字迹会先看什么？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "先看是谁写的，再看内容。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP08_ZHANGJI",
+      "episode": 8,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep08-zhangji-t01",
+          "speaker": "pd",
+          "text": "今天最先注意到什么？"
+        },
+        {
+          "id": "ep08-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "不是照片，是旁边那张很小的纸。"
+        },
+        {
+          "id": "ep08-zhangji-t03",
+          "speaker": "pd",
+          "text": "你认出来了吗？"
+        },
+        {
+          "id": "ep08-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "认出来了。那时候大家都爱留这种东西。"
+        },
+        {
+          "id": "ep08-zhangji-t05",
+          "speaker": "pd",
+          "text": "有想笑的时候吗？"
+        },
+        {
+          "id": "ep08-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "有，看到以前拍照的姿势。"
+        },
+        {
+          "id": "ep08-zhangji-t07",
+          "speaker": "pd",
+          "text": "你愿意给观众解释吗？"
+        },
+        {
+          "id": "ep08-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "可以解释姿势，不一定解释全部故事。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你觉得这些物件还值得保存吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你觉得这些物件还值得保存吗？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "值得啊，丢掉也不会让时间倒回去。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP08_ZHANGZEYU",
+      "episode": 8,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep08-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "今天的房间让你想起什么？"
+        },
+        {
+          "id": "ep08-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "想起以前一起在路上的时间，比想象中多。"
+        },
+        {
+          "id": "ep08-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "是某张照片吗？"
+        },
+        {
+          "id": "ep08-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "不止一张，有些地方看一眼就认识。"
+        },
+        {
+          "id": "ep08-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "你想把过去留下还是放下？"
+        },
+        {
+          "id": "ep08-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "也不一定非得选一个吧，留着记忆也可以往前走。"
+        },
+        {
+          "id": "ep08-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "有没有东西想再看一次？"
+        },
+        {
+          "id": "ep08-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "有，先让我自己看看。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你会给记忆里的自己写封信吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你会给记忆里的自己写封信吗？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "我怕写着写着变成长篇作文。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP08_ZUOHANG",
+      "episode": 8,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep08-zuohang-t01",
+          "speaker": "pd",
+          "text": "看见回忆物件的第一反应？"
+        },
+        {
+          "id": "ep08-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "有些居然还在，我挺意外。"
+        },
+        {
+          "id": "ep08-zuohang-t03",
+          "speaker": "pd",
+          "text": "你平时会保存东西吗？"
+        },
+        {
+          "id": "ep08-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "会，但也不是每张纸都留。"
+        },
+        {
+          "id": "ep08-zuohang-t05",
+          "speaker": "pd",
+          "text": "有没有想起某个没做完的约定？"
+        },
+        {
+          "id": "ep08-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "有一些，不过我不想在这里把它说成多大一件事。"
+        },
+        {
+          "id": "ep08-zuohang-t07",
+          "speaker": "pd",
+          "text": "你愿意以后补上吗？"
+        },
+        {
+          "id": "ep08-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "看是不是还有机会。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "如果一个回忆只能用一个词形容？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "如果一个回忆只能用一个词形容？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "别急着让我总结，真的。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP09_ZHUZHIXIN",
+      "episode": 9,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep09-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "今天做选择的时候犹豫了吗？"
+        },
+        {
+          "id": "ep09-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "有。不是每个人都适合同一个任务。"
+        },
+        {
+          "id": "ep09-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "你会担心没被选的人吗？"
+        },
+        {
+          "id": "ep09-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "会，但也不能因为怕人难过就乱选。"
+        },
+        {
+          "id": "ep09-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "有没有向谁解释？"
+        },
+        {
+          "id": "ep09-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "如果有必要我会讲清楚，不想让人一直猜。"
+        },
+        {
+          "id": "ep09-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "今天最累的环节？"
+        },
+        {
+          "id": "ep09-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "做完任务还要猜大家为什么这么选。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "如果知道有人会因此难过，你还会按原样选吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "如果知道有人会因此难过，你还会按原样选吗？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "会把原因讲清楚，但不想假装选了另一个。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP09_SUXINHAO",
+      "episode": 9,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep09-suxinhao-t01",
+          "speaker": "pd",
+          "text": "你是先看任务还是先想搭档？"
+        },
+        {
+          "id": "ep09-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "先看任务，至少知道要干嘛。"
+        },
+        {
+          "id": "ep09-suxinhao-t03",
+          "speaker": "pd",
+          "text": "有人因此误会你吗？"
+        },
+        {
+          "id": "ep09-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "可能吧。有人不问，我也不知道该不该解释。"
+        },
+        {
+          "id": "ep09-suxinhao-t05",
+          "speaker": "pd",
+          "text": "如果有人问你会说吗？"
+        },
+        {
+          "id": "ep09-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "会，我不想因为一个分组闹得太奇怪。"
+        },
+        {
+          "id": "ep09-suxinhao-t07",
+          "speaker": "pd",
+          "text": "今天学到了什么？"
+        },
+        {
+          "id": "ep09-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "不能把自己的选择当成别人不用在意的事情。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你觉得解释能解决所有误会吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你觉得解释能解决所有误会吗？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "不能，但什么都不说更麻烦。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP09_ZHANGJI",
+      "episode": 9,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep09-zhangji-t01",
+          "speaker": "pd",
+          "text": "今天被选中的时候什么感觉？"
+        },
+        {
+          "id": "ep09-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "先确认是不是选错名字了。"
+        },
+        {
+          "id": "ep09-zhangji-t03",
+          "speaker": "pd",
+          "text": "你为什么这么想？"
+        },
+        {
+          "id": "ep09-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "节目组规则挺绕的，我怕大家看错。"
+        },
+        {
+          "id": "ep09-zhangji-t05",
+          "speaker": "pd",
+          "text": "没互选会尴尬吗？"
+        },
+        {
+          "id": "ep09-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "有一点，但也可以一起把任务做完。"
+        },
+        {
+          "id": "ep09-zhangji-t07",
+          "speaker": "pd",
+          "text": "以后还想做匿名选择吗？"
+        },
+        {
+          "id": "ep09-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "可以，别每天来就行。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "今天你有没有差点点错人？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "今天你有没有差点点错人？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "差点，手指都悬在屏幕上了。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP09_ZHANGZEYU",
+      "episode": 9,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep09-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "你想了多久才提交选择？"
+        },
+        {
+          "id": "ep09-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "没有很久，但提交前看了两遍。"
+        },
+        {
+          "id": "ep09-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "为什么看两遍？"
+        },
+        {
+          "id": "ep09-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "怕点错。点错比没互选还尴尬。"
+        },
+        {
+          "id": "ep09-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "结果出来你意外吗？"
+        },
+        {
+          "id": "ep09-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "有的地方意外，有的地方完全能理解。"
+        },
+        {
+          "id": "ep09-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "有没有想解释的？"
+        },
+        {
+          "id": "ep09-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "如果对方愿意听，我会解释。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你会因为没互选就重新考虑关系吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你会因为没互选就重新考虑关系吗？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "会想一下，但不会立刻下结论。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP09_ZUOHANG",
+      "episode": 9,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep09-zuohang-t01",
+          "speaker": "pd",
+          "text": "你对今天的互选规则怎么看？"
+        },
+        {
+          "id": "ep09-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "挺有意思，也挺容易让人想多。"
+        },
+        {
+          "id": "ep09-zuohang-t03",
+          "speaker": "pd",
+          "text": "你有想多吗？"
+        },
+        {
+          "id": "ep09-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "有一瞬间，后来觉得不必每个选择都当答案。"
+        },
+        {
+          "id": "ep09-zuohang-t05",
+          "speaker": "pd",
+          "text": "有没有人主动找你说话？"
+        },
+        {
+          "id": "ep09-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "有的话我会好好听，不会故意绕开。"
+        },
+        {
+          "id": "ep09-zuohang-t07",
+          "speaker": "pd",
+          "text": "今天还想再选一次吗？"
+        },
+        {
+          "id": "ep09-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "先不用，脑子累。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你更在意选谁还是被谁选？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你更在意选谁还是被谁选？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "今天先把任务做好吧。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP10_ZHUZHIXIN",
+      "episode": 10,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep10-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "旅行这天最难忘的是什么？"
+        },
+        {
+          "id": "ep10-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "早起。景色挺好，但早起真的很难。"
+        },
+        {
+          "id": "ep10-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "后来精神了吗？"
+        },
+        {
+          "id": "ep10-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "走了一段路就清醒了。"
+        },
+        {
+          "id": "ep10-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "晚上为什么在外面待了一会儿？"
+        },
+        {
+          "id": "ep10-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "想把一天的声音都缓一缓。"
+        },
+        {
+          "id": "ep10-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "今天有没有想认真说的话？"
+        },
+        {
+          "id": "ep10-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "有，等找到合适的地方再讲。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "看日出值得这么早起吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "看日出值得这么早起吗？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "风景值得，起床这个过程不值得。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP10_SUXINHAO",
+      "episode": 10,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep10-suxinhao-t01",
+          "speaker": "pd",
+          "text": "出门前你准备了很多东西？"
+        },
+        {
+          "id": "ep10-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "也没有，主要怕大家临时找不到充电线。"
+        },
+        {
+          "id": "ep10-suxinhao-t03",
+          "speaker": "pd",
+          "text": "最后有人忘带吗？"
+        },
+        {
+          "id": "ep10-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "有人忘了水，我就不点名了。"
+        },
+        {
+          "id": "ep10-suxinhao-t05",
+          "speaker": "pd",
+          "text": "旅行里最喜欢哪个环节？"
+        },
+        {
+          "id": "ep10-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "大家一起坐下来吃东西的时候，不用赶流程。"
+        },
+        {
+          "id": "ep10-suxinhao-t07",
+          "speaker": "pd",
+          "text": "有想留住的画面吗？"
+        },
+        {
+          "id": "ep10-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "日落那会儿，挺好看的。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你是不是随身带了备用东西？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你是不是随身带了备用东西？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "有，怕临时又要找人借。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP10_ZHANGJI",
+      "episode": 10,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep10-zhangji-t01",
+          "speaker": "pd",
+          "text": "今天路上你是不是看错方向了？"
+        },
+        {
+          "id": "ep10-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "那是路线更新了。"
+        },
+        {
+          "id": "ep10-zhangji-t03",
+          "speaker": "pd",
+          "text": "你确定？"
+        },
+        {
+          "id": "ep10-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "好吧，有一段确实走反了。"
+        },
+        {
+          "id": "ep10-zhangji-t05",
+          "speaker": "pd",
+          "text": "谁先发现的？"
+        },
+        {
+          "id": "ep10-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "有人提醒，声音挺冷静的。"
+        },
+        {
+          "id": "ep10-zhangji-t07",
+          "speaker": "pd",
+          "text": "你想给自己什么评价？"
+        },
+        {
+          "id": "ep10-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "至少最后大家都到了。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "方向走错以后你第一反应？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "方向走错以后你第一反应？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "假装在欣赏路边风景。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP10_ZHANGZEYU",
+      "episode": 10,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep10-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "旅行里有没有觉得一整天过得很快？"
+        },
+        {
+          "id": "ep10-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "很快，尤其大家在车上聊天的时候。"
+        },
+        {
+          "id": "ep10-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "你更喜欢出发还是到达？"
+        },
+        {
+          "id": "ep10-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "到达吧，终于能知道东西在哪儿。"
+        },
+        {
+          "id": "ep10-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "今天有没有照顾到别人的愿望？"
+        },
+        {
+          "id": "ep10-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "有些之前说过的小事能安排就安排。"
+        },
+        {
+          "id": "ep10-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "这算很在意吗？"
+        },
+        {
+          "id": "ep10-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "算我记性还可以。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你有记得别人之前的小愿望吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你有记得别人之前的小愿望吗？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "记得一些，碰上合适机会就做。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal",
+      "conditionalInsert": {
+        "predicate": "ep10.events.includes(\"MH_SUNRISE_TOGETHER\")",
+        "question": "你和左航真的一起看了日出？",
+        "yes": "看了。他以前提过，我刚好记得。",
+        "no": "没一起看成，不过出去走了一趟也挺开心。"
+      }
+    },
+    {
+      "interviewId": "EP10_ZUOHANG",
+      "episode": 10,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep10-zuohang-t01",
+          "speaker": "pd",
+          "text": "你最期待清晨还是晚上？"
+        },
+        {
+          "id": "ep10-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "晚上。清晨得起太早。"
+        },
+        {
+          "id": "ep10-zuohang-t03",
+          "speaker": "pd",
+          "text": "那今天早上的风景呢？"
+        },
+        {
+          "id": "ep10-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "确实挺好，算没白起来。"
+        },
+        {
+          "id": "ep10-zuohang-t05",
+          "speaker": "pd",
+          "text": "有什么想跟谁说但没说的吗？"
+        },
+        {
+          "id": "ep10-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "有，但当时大家都在，我就没说。"
+        },
+        {
+          "id": "ep10-zuohang-t07",
+          "speaker": "pd",
+          "text": "以后还会提吗？"
+        },
+        {
+          "id": "ep10-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "合适的时候会。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "清晨那么安静，你在想什么？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "清晨那么安静，你在想什么？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "先想早餐什么时候能吃。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP11_ZHUZHIXIN",
+      "episode": 11,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep11-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "你喜欢今天的礼物交换吗？"
+        },
+        {
+          "id": "ep11-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "喜欢，至少不用自己猜要带什么出来。"
+        },
+        {
+          "id": "ep11-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "你猜得到礼物是谁挑的吗？"
+        },
+        {
+          "id": "ep11-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "我猜得挺不准的，后来干脆不猜。"
+        },
+        {
+          "id": "ep11-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "真心话哪个问题最难？"
+        },
+        {
+          "id": "ep11-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "问最想向谁道歉的那个，感觉不适合当着一屋子说。"
+        },
+        {
+          "id": "ep11-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "最后为什么没继续回答？"
+        },
+        {
+          "id": "ep11-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "因为我想私下说，不是没答案。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你会因为收到礼物改变对一个人的看法吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你会因为收到礼物改变对一个人的看法吗？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "不会光靠礼物，但至少知道对方观察过我。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP11_SUXINHAO",
+      "episode": 11,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep11-suxinhao-t01",
+          "speaker": "pd",
+          "text": "礼物你准备了多久？"
+        },
+        {
+          "id": "ep11-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "比想象中久，怕买的东西没用。"
+        },
+        {
+          "id": "ep11-suxinhao-t03",
+          "speaker": "pd",
+          "text": "你在乎实用吗？"
+        },
+        {
+          "id": "ep11-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "对啊，收到以后能用最好。"
+        },
+        {
+          "id": "ep11-suxinhao-t05",
+          "speaker": "pd",
+          "text": "真心话有没有问题让你不舒服？"
+        },
+        {
+          "id": "ep11-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "有，但我知道可以选择不回答。"
+        },
+        {
+          "id": "ep11-suxinhao-t07",
+          "speaker": "pd",
+          "text": "你会回头再聊那件事吗？"
+        },
+        {
+          "id": "ep11-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "会，等不需要大家都听见的时候。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你会给礼物附使用说明吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你会给礼物附使用说明吗？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "如果不难用就不用，我可不想写手册。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP11_ZHANGJI",
+      "episode": 11,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep11-zhangji-t01",
+          "speaker": "pd",
+          "text": "今天你收到礼物第一反应是什么？"
+        },
+        {
+          "id": "ep11-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "先猜是谁，然后发现我猜的方向可能全错。"
+        },
+        {
+          "id": "ep11-zhangji-t03",
+          "speaker": "pd",
+          "text": "你为什么看起来挺开心？"
+        },
+        {
+          "id": "ep11-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "因为有人真的观察过我喜欢什么。"
+        },
+        {
+          "id": "ep11-zhangji-t05",
+          "speaker": "pd",
+          "text": "真心话有没有说多了？"
+        },
+        {
+          "id": "ep11-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "还好，至少没把小时候糗事全抖出来。"
+        },
+        {
+          "id": "ep11-zhangji-t07",
+          "speaker": "pd",
+          "text": "你想再加个问题吗？"
+        },
+        {
+          "id": "ep11-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "问节目组明天可不可以休息。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你把今天的礼物藏起来了吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你把今天的礼物藏起来了吗？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "藏什么，我就是怕掉了。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP11_ZHANGZEYU",
+      "episode": 11,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep11-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "礼物任务你更喜欢送还是收？"
+        },
+        {
+          "id": "ep11-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "送吧，我比较知道自己为什么选那个。"
+        },
+        {
+          "id": "ep11-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "收到的让你意外吗？"
+        },
+        {
+          "id": "ep11-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "有一点，不是贵重，就是挺用心。"
+        },
+        {
+          "id": "ep11-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "今天哪句话让你想了很久？"
+        },
+        {
+          "id": "ep11-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "有人说不一定要把所有事都说得那么完美。"
+        },
+        {
+          "id": "ep11-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "你认同吗？"
+        },
+        {
+          "id": "ep11-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "大概认同，但讲清楚还是挺重要。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你对真心话最怕哪种问题？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你对真心话最怕哪种问题？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "那种让你立刻选一个人的。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP11_ZUOHANG",
+      "episode": 11,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep11-zuohang-t01",
+          "speaker": "pd",
+          "text": "你送礼物时会解释为什么吗？"
+        },
+        {
+          "id": "ep11-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "看对方问不问，不问我一般就不讲那么多。"
+        },
+        {
+          "id": "ep11-zuohang-t03",
+          "speaker": "pd",
+          "text": "收到礼物你会保存吗？"
+        },
+        {
+          "id": "ep11-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "会，喜欢的东西就留着。"
+        },
+        {
+          "id": "ep11-zuohang-t05",
+          "speaker": "pd",
+          "text": "真心话有没有特别不想回答的？"
+        },
+        {
+          "id": "ep11-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "有，问得太私人我就跳过。"
+        },
+        {
+          "id": "ep11-zuohang-t07",
+          "speaker": "pd",
+          "text": "有人会因此误会吗？"
+        },
+        {
+          "id": "ep11-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "那也不能因为怕误会什么都说吧。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你有没有一件东西舍不得送出去？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你有没有一件东西舍不得送出去？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "有，想了想还是留给自己。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP12_ZHUZHIXIN",
+      "episode": 12,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep12-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "最后一次自由约会，你想了多久？"
+        },
+        {
+          "id": "ep12-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "其实没有犹豫很久，更多是在想怎么开口。"
+        },
+        {
+          "id": "ep12-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "今天有没有做到？"
+        },
+        {
+          "id": "ep12-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "有些话比以前说得直接一点。"
+        },
+        {
+          "id": "ep12-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "你更期待被谁选择还是自己选择？"
+        },
+        {
+          "id": "ep12-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "自己也得做决定吧，不能一直等别人。"
+        },
+        {
+          "id": "ep12-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "今晚还有遗憾吗？"
+        },
+        {
+          "id": "ep12-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "还有一点，但至少没有把所有话都留到最后一天。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你害怕直接问答案吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你害怕直接问答案吗？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "怕，但一直不问也不会自动有答案。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP12_SUXINHAO",
+      "episode": 12,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep12-suxinhao-t01",
+          "speaker": "pd",
+          "text": "最后一次约会为什么让你有压力？"
+        },
+        {
+          "id": "ep12-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "因为大家知道后面要做决定了。"
+        },
+        {
+          "id": "ep12-suxinhao-t03",
+          "speaker": "pd",
+          "text": "今天有努力控制流程吗？"
+        },
+        {
+          "id": "ep12-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "我尽量没有，别人想走哪儿就一起走。"
+        },
+        {
+          "id": "ep12-suxinhao-t05",
+          "speaker": "pd",
+          "text": "你注意到自己有变化吗？"
+        },
+        {
+          "id": "ep12-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "有，以前总觉得马上解决才算好，现在有时候可以先听完。"
+        },
+        {
+          "id": "ep12-suxinhao-t07",
+          "speaker": "pd",
+          "text": "还有想说的吗？"
+        },
+        {
+          "id": "ep12-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "有，等能面对面说的时候再讲。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你今天有没有忍住不安排对方？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你今天有没有忍住不安排对方？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "有几次，手都想伸过去拿地图了。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP12_ZHANGJI",
+      "episode": 12,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep12-zhangji-t01",
+          "speaker": "pd",
+          "text": "你选人时看重什么？"
+        },
+        {
+          "id": "ep12-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "至少和对方待着不会老想看手机。"
+        },
+        {
+          "id": "ep12-zhangji-t03",
+          "speaker": "pd",
+          "text": "这是你今天真实感受吗？"
+        },
+        {
+          "id": "ep12-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "有一部分是，还有一部分是今天不想做任务。"
+        },
+        {
+          "id": "ep12-zhangji-t05",
+          "speaker": "pd",
+          "text": "你有没有怕被拒绝？"
+        },
+        {
+          "id": "ep12-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "当然会，但不问就永远不知道。"
+        },
+        {
+          "id": "ep12-zhangji-t07",
+          "speaker": "pd",
+          "text": "如果没被选择呢？"
+        },
+        {
+          "id": "ep12-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "那也正常，不能把别人的决定改了。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你觉得被拒绝很丢人吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你觉得被拒绝很丢人吗？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "不丢人，至少认真问过。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP12_ZHANGZEYU",
+      "episode": 12,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep12-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "最后一次约会跟第一次比怎样？"
+        },
+        {
+          "id": "ep12-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "明显不一样，第一回像在认识人，今天像在确认自己有没有看懂。"
+        },
+        {
+          "id": "ep12-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "你看懂了吗？"
+        },
+        {
+          "id": "ep12-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "大概一半，剩下的一半得听对方亲口说。"
+        },
+        {
+          "id": "ep12-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "你想不想先表态？"
+        },
+        {
+          "id": "ep12-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "想，但要确定不是为了赶节目进度。"
+        },
+        {
+          "id": "ep12-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "如果对方没准备好？"
+        },
+        {
+          "id": "ep12-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "那就别逼人。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "如果对方说还需要时间呢？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "如果对方说还需要时间呢？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "那就给时间，不用催。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP12_ZUOHANG",
+      "episode": 12,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep12-zuohang-t01",
+          "speaker": "pd",
+          "text": "今天你主动提过什么？"
+        },
+        {
+          "id": "ep12-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "我问了一句以后还有没有机会一起做件事。"
+        },
+        {
+          "id": "ep12-zuohang-t03",
+          "speaker": "pd",
+          "text": "对方怎么回答？"
+        },
+        {
+          "id": "ep12-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "说可以再看看。至少不是被我吓跑。"
+        },
+        {
+          "id": "ep12-zuohang-t05",
+          "speaker": "pd",
+          "text": "你喜欢这种不确定吗？"
+        },
+        {
+          "id": "ep12-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "不算喜欢，但也不用非得今天给答案。"
+        },
+        {
+          "id": "ep12-zuohang-t07",
+          "speaker": "pd",
+          "text": "明天你最想做什么？"
+        },
+        {
+          "id": "ep12-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "把该说的话说清楚。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你有没有在心里排练过那句话？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你有没有在心里排练过那句话？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "排练过，真到时候又说得不一样。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "preReveal"
+    },
+    {
+      "interviewId": "EP13_ZHUZHIXIN",
+      "episode": 13,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep13-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "X公开以后你松了一口气吗？"
+        },
+        {
+          "id": "ep13-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "松了一点。至少不用把每句话都想得很复杂。"
+        },
+        {
+          "id": "ep13-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "你回看之前的沉默会觉得好笑吗？"
+        },
+        {
+          "id": "ep13-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "有些会，有些还是不太好笑。"
+        },
+        {
+          "id": "ep13-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "最想纠正一个误解是什么？"
+        },
+        {
+          "id": "ep13-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "我不说，不代表我不想听。"
+        },
+        {
+          "id": "ep13-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "你今天真的说出来了吗？"
+        },
+        {
+          "id": "ep13-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "说了一部分，这次对方也听完了。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "听到X名单公开，你有没有想笑的瞬间？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "听到X名单公开，你有没有想笑的瞬间？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "有，想起前几天大家猜得那么起劲。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "postReveal"
+    },
+    {
+      "interviewId": "EP13_SUXINHAO",
+      "episode": 13,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep13-suxinhao-t01",
+          "speaker": "pd",
+          "text": "今天X公开你最怕发生什么？"
+        },
+        {
+          "id": "ep13-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "怕过去的话又被截成另外一种意思。"
+        },
+        {
+          "id": "ep13-suxinhao-t03",
+          "speaker": "pd",
+          "text": "那这次谈得怎么样？"
+        },
+        {
+          "id": "ep13-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "至少我们都没急着替对方把话说完。"
+        },
+        {
+          "id": "ep13-suxinhao-t05",
+          "speaker": "pd",
+          "text": "你还有想道歉的事吗？"
+        },
+        {
+          "id": "ep13-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "有，关于以前总想马上解决所有问题。"
+        },
+        {
+          "id": "ep13-suxinhao-t07",
+          "speaker": "pd",
+          "text": "今天你得到回答了吗？"
+        },
+        {
+          "id": "ep13-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "得到了一个可以慢慢继续的机会。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你今天有刻意停下来听对方吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你今天有刻意停下来听对方吗？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "有，比以前听得仔细一点。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "postReveal"
+    },
+    {
+      "interviewId": "EP13_ZHANGJI",
+      "episode": 13,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep13-zhangji-t01",
+          "speaker": "pd",
+          "text": "看到大家揭晓X，你有什么反应？"
+        },
+        {
+          "id": "ep13-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "我本来就没敢押得特别死，不然今天要自己打脸。"
+        },
+        {
+          "id": "ep13-zhangji-t03",
+          "speaker": "pd",
+          "text": "真的没猜？"
+        },
+        {
+          "id": "ep13-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "猜过啊，但猜跟确认是两回事。"
+        },
+        {
+          "id": "ep13-zhangji-t05",
+          "speaker": "pd",
+          "text": "公开以后你最想做什么？"
+        },
+        {
+          "id": "ep13-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "吃顿正常的饭，不要全桌都盯着谁跟谁。"
+        },
+        {
+          "id": "ep13-zhangji-t07",
+          "speaker": "pd",
+          "text": "你觉得自己更明确了吗？"
+        },
+        {
+          "id": "ep13-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "明确了一些，也知道有些人不会跟我走同一条路。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你看到网上的推理会怎么想？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你看到网上的推理会怎么想？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "他们猜得比我们排练还认真。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "postReveal",
+      "conditionalInsert": {
+        "predicate": "formalExMap.zhangji !== null",
+        "question": "这次公开名单里，你也有本季正式X吗？",
+        "yes": "有。有些以前没说清的事今天可以说了。",
+        "no": "没有。我今天更多是在看别人终于不用猜了。"
+      }
+    },
+    {
+      "interviewId": "EP13_ZHANGZEYU",
+      "episode": 13,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep13-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "公开以后有没有被别人误会的感觉？"
+        },
+        {
+          "id": "ep13-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "有些关系大家老想用一个词解释，但相处很复杂。"
+        },
+        {
+          "id": "ep13-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "你自己现在清楚了吗？"
+        },
+        {
+          "id": "ep13-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "比刚来的时候清楚。至少知道什么是舍不得，什么是习惯。"
+        },
+        {
+          "id": "ep13-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "今天有话想说吗？"
+        },
+        {
+          "id": "ep13-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "有，等该听的人坐下来我会说。"
+        },
+        {
+          "id": "ep13-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "你觉得一定要复合才算好结局吗？"
+        },
+        {
+          "id": "ep13-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "不一定，两个人都愿意才算。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你觉得“放下”一定意味着不联系吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你觉得“放下”一定意味着不联系吗？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "不一定，每段关系都不一样。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "postReveal"
+    },
+    {
+      "interviewId": "EP13_ZUOHANG",
+      "episode": 13,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep13-zuohang-t01",
+          "speaker": "pd",
+          "text": "今天知道所有X身份以后呢？"
+        },
+        {
+          "id": "ep13-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "其实很多之前的画面突然能理解了。"
+        },
+        {
+          "id": "ep13-zuohang-t03",
+          "speaker": "pd",
+          "text": "你会重新解释过去吗？"
+        },
+        {
+          "id": "ep13-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "有些需要，有些就让它留在过去。"
+        },
+        {
+          "id": "ep13-zuohang-t05",
+          "speaker": "pd",
+          "text": "有人说你一直没说清楚，你怎么看？"
+        },
+        {
+          "id": "ep13-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "我有自己没讲好的部分。"
+        },
+        {
+          "id": "ep13-zuohang-t07",
+          "speaker": "pd",
+          "text": "明天还会主动吗？"
+        },
+        {
+          "id": "ep13-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "会，至少不会因为怕结果就不说。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你有没有改变一个关于过去的看法？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你有没有改变一个关于过去的看法？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "有，但我需要再想想怎么说。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "postReveal"
+    },
+    {
+      "interviewId": "EP14_ZHUZHIXIN",
+      "episode": 14,
+      "characterId": "zhuzhixin",
+      "characterName": "朱志鑫",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep14-zhuzhixin-t01",
+          "speaker": "pd",
+          "text": "十四天里你最大的变化是什么？"
+        },
+        {
+          "id": "ep14-zhuzhixin-t02",
+          "speaker": "zhuzhixin",
+          "text": "以前总觉得自己想清楚就够了，现在知道对方不能一直等我猜完。"
+        },
+        {
+          "id": "ep14-zhuzhixin-t03",
+          "speaker": "pd",
+          "text": "今天为什么决定走过去？"
+        },
+        {
+          "id": "ep14-zhuzhixin-t04",
+          "speaker": "zhuzhixin",
+          "text": "因为有些话我终于能直接说，而不是换个话题。"
+        },
+        {
+          "id": "ep14-zhuzhixin-t05",
+          "speaker": "pd",
+          "text": "你最希望明天发生什么？"
+        },
+        {
+          "id": "ep14-zhuzhixin-t06",
+          "speaker": "zhuzhixin",
+          "text": "醒来以后我们还能照常说话，不用因为节目结束就突然变回以前。"
+        },
+        {
+          "id": "ep14-zhuzhixin-t07",
+          "speaker": "pd",
+          "text": "给第一天的自己一句话？"
+        },
+        {
+          "id": "ep14-zhuzhixin-t08",
+          "speaker": "zhuzhixin",
+          "text": "少装没事，真的。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "如果没有镜头，你今天还会这么选吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "如果没有镜头，你今天还会这么选吗？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "会。不然前面那些话就白说了。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhuzhixin",
+              "text": "吃得挺好。终于不用我想今天去哪儿找吃的。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "postReveal"
+    },
+    {
+      "interviewId": "EP14_SUXINHAO",
+      "episode": 14,
+      "characterId": "suxinhao",
+      "characterName": "苏新皓",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep14-suxinhao-t01",
+          "speaker": "pd",
+          "text": "最终选择之前你最紧张什么？"
+        },
+        {
+          "id": "ep14-suxinhao-t02",
+          "speaker": "suxinhao",
+          "text": "不是对方会不会走过来，是我们说过的改变能不能真的做到。"
+        },
+        {
+          "id": "ep14-suxinhao-t03",
+          "speaker": "pd",
+          "text": "今天你想怎么做？"
+        },
+        {
+          "id": "ep14-suxinhao-t04",
+          "speaker": "suxinhao",
+          "text": "先听完，不抢着把结论说出来。"
+        },
+        {
+          "id": "ep14-suxinhao-t05",
+          "speaker": "pd",
+          "text": "十四天最想谢谢谁？"
+        },
+        {
+          "id": "ep14-suxinhao-t06",
+          "speaker": "suxinhao",
+          "text": "谢谢愿意跟我把话说清楚的人，也谢谢大家一起生活。"
+        },
+        {
+          "id": "ep14-suxinhao-t07",
+          "speaker": "pd",
+          "text": "节目结束以后呢？"
+        },
+        {
+          "id": "ep14-suxinhao-t08",
+          "speaker": "suxinhao",
+          "text": "不靠节目的任务，也要好好过日子。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你觉得走出小屋后最大的挑战？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你觉得走出小屋后最大的挑战？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "没有节目流程提醒，就得自己坚持。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "suxinhao",
+              "text": "还可以。我主要想知道明天安排会不会很早。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "postReveal"
+    },
+    {
+      "interviewId": "EP14_ZHANGJI",
+      "episode": 14,
+      "characterId": "zhangji",
+      "characterName": "张极",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep14-zhangji-t01",
+          "speaker": "pd",
+          "text": "你对最终选择的结果满意吗？"
+        },
+        {
+          "id": "ep14-zhangji-t02",
+          "speaker": "zhangji",
+          "text": "如果大家能坦白说自己要什么，就挺好。"
+        },
+        {
+          "id": "ep14-zhangji-t03",
+          "speaker": "pd",
+          "text": "你自己做到了吗？"
+        },
+        {
+          "id": "ep14-zhangji-t04",
+          "speaker": "zhangji",
+          "text": "做了，虽然开口前还是会绕两句。"
+        },
+        {
+          "id": "ep14-zhangji-t05",
+          "speaker": "pd",
+          "text": "最舍不得小屋什么？"
+        },
+        {
+          "id": "ep14-zhangji-t06",
+          "speaker": "zhangji",
+          "text": "沙发，坐着真的挺舒服。"
+        },
+        {
+          "id": "ep14-zhangji-t07",
+          "speaker": "pd",
+          "text": "你不说舍不得人？"
+        },
+        {
+          "id": "ep14-zhangji-t08",
+          "speaker": "zhangji",
+          "text": "人以后还能见啊。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "以后还想参加这种节目吗？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "以后还想参加这种节目吗？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "先让我出去吃一顿再问。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangji",
+              "text": "挺好，就是大家聊天比吃饭还热闹。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "postReveal"
+    },
+    {
+      "interviewId": "EP14_ZHANGZEYU",
+      "episode": 14,
+      "characterId": "zhangzeyu",
+      "characterName": "张泽禹",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep14-zhangzeyu-t01",
+          "speaker": "pd",
+          "text": "十四天有没有让你意外的事？"
+        },
+        {
+          "id": "ep14-zhangzeyu-t02",
+          "speaker": "zhangzeyu",
+          "text": "原来很多事情没有我想的那么简单，也没有那么可怕。"
+        },
+        {
+          "id": "ep14-zhangzeyu-t03",
+          "speaker": "pd",
+          "text": "你最终选择凭什么决定？"
+        },
+        {
+          "id": "ep14-zhangzeyu-t04",
+          "speaker": "zhangzeyu",
+          "text": "看双方是不是真的愿意，不是看谁今天票数高。"
+        },
+        {
+          "id": "ep14-zhangzeyu-t05",
+          "speaker": "pd",
+          "text": "有想谢谢的人吗？"
+        },
+        {
+          "id": "ep14-zhangzeyu-t06",
+          "speaker": "zhangzeyu",
+          "text": "有，但我会当面说，不在这里念名单。"
+        },
+        {
+          "id": "ep14-zhangzeyu-t07",
+          "speaker": "pd",
+          "text": "离开小屋后最想干嘛？"
+        },
+        {
+          "id": "ep14-zhangzeyu-t08",
+          "speaker": "zhangzeyu",
+          "text": "找个地方好好睡一觉。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你最希望谁能理解你今天的选择？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你最希望谁能理解你今天的选择？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "当事人。其他人怎么猜我管不了。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zhangzeyu",
+              "text": "挺好，五个人一起吃饭总有点新鲜事。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "postReveal"
+    },
+    {
+      "interviewId": "EP14_ZUOHANG",
+      "episode": 14,
+      "characterId": "zuohang",
+      "characterName": "左航",
+      "sceneType": "interview",
+      "canonicalTurns": [
+        {
+          "id": "ep14-zuohang-t01",
+          "speaker": "pd",
+          "text": "今天还有没说的话吗？"
+        },
+        {
+          "id": "ep14-zuohang-t02",
+          "speaker": "zuohang",
+          "text": "有，但我决定直接找人讲，别留在采访室。"
+        },
+        {
+          "id": "ep14-zuohang-t03",
+          "speaker": "pd",
+          "text": "你会后悔某些选择吗？"
+        },
+        {
+          "id": "ep14-zuohang-t04",
+          "speaker": "zuohang",
+          "text": "可能会，但每次都得对当时的自己负责。"
+        },
+        {
+          "id": "ep14-zuohang-t05",
+          "speaker": "pd",
+          "text": "十四天最喜欢什么时候？"
+        },
+        {
+          "id": "ep14-zuohang-t06",
+          "speaker": "zuohang",
+          "text": "大家不需要任务也能自然坐在一起的时候。"
+        },
+        {
+          "id": "ep14-zuohang-t07",
+          "speaker": "pd",
+          "text": "最后想说什么？"
+        },
+        {
+          "id": "ep14-zuohang-t08",
+          "speaker": "zuohang",
+          "text": "希望大家出了这里也都过得不错。"
+        }
+      ],
+      "directorFollowupChoices": [
+        {
+          "id": "probe",
+          "label": "你回去会不会怀念这里的早饭？",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "你回去会不会怀念这里的早饭？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "会，尤其不用我准备的时候。"
+            }
+          ]
+        },
+        {
+          "id": "gentle",
+          "label": "不继续追问，换个轻松话题",
+          "turns": [
+            {
+              "speaker": "pd",
+              "text": "先不追这个了。今天晚饭你吃得怎么样？"
+            },
+            {
+              "speaker": "zuohang",
+              "text": "还好，吃完以后我还想在外面坐一会儿。"
+            }
+          ]
+        }
+      ],
+      "requires": [
+        "interviewSelected",
+        "characterParticipated"
+      ],
+      "spoilerLevel": "postReveal"
+    }
+  ]
+}

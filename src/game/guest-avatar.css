@@ -1,0 +1,14 @@
+.guest-portrait {
+  display: block;
+  flex: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cast-select .mini-avatar {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}

@@ -1,0 +1,24 @@
+import { test, expect } from "@playwright/test";
+test("微博、豆瓣和Threads有独立的移动端视觉，交互和滚动区域可用",async({page})=>{
+ page.on("pageerror",error=>console.log("PAGE_ERROR",error.stack));
+ page.on("console",message=>{if(message.type()==="error")console.log("CONSOLE_ERROR",message.text())});
+ await page.goto("/tests/fixtures/social-redesign.html");
+ await expect(page.locator(".social-preview-switch")).toBeVisible();
+ await page.getByRole("button",{name:"微博"}).click();
+ await page.getByRole("button",{name:"发现",exact:true}).click();
+ await expect(page.locator(".weibo-discovery")).toBeVisible();
+ await page.screenshot({path:"screenshots/social-redesign-weibo.png",fullPage:false});
+ await page.getByRole("button",{name:"豆瓣"}).click();
+ await expect(page.locator(".forum-group-mark")).toContainText("豆");
+ await expect(page.locator(".forum-topic").first()).toBeVisible();
+ await page.screenshot({path:"screenshots/social-redesign-douban.png",fullPage:false});
+ await page.getByRole("button",{name:"+ 加入"}).click();
+ await expect(page.getByRole("button",{name:"已加入"})).toHaveAttribute("aria-pressed","true");
+ await page.getByRole("button",{name:"热门",exact:true}).click();
+ await page.getByRole("button",{name:"Threads"}).click();
+ await expect(page.locator(".threads-reference")).toHaveCSS("background-color","rgb(9, 9, 10)");
+ await expect(page.locator(".tr-post").first()).toBeVisible();
+ await page.screenshot({path:"screenshots/social-redesign-threads.png",fullPage:false});
+ const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>document.documentElement.clientWidth);
+ expect(overflow).toBe(false);
+});

@@ -1,0 +1,9 @@
+.ep05-player{box-sizing:border-box;display:flex;flex-direction:column;width:100%;height:100%;min-height:0;overflow:hidden;padding:10px 14px 0;background:linear-gradient(180deg,#faf8f3,#f2eee7);color:#302b25;font-family:Inter,"Noto Sans SC",system-ui,sans-serif}
+.ep05-player>.season-cam-visual{flex:0 0 180px;height:180px;min-height:135px}
+.ep05-player>.d1-dialogue-area{flex:1 1 0;min-height:0;margin-top:10px}
+.ep05-player>.season-controls{flex:0 0 auto}
+.ep05-timer{display:flex;align-items:center;gap:12px;margin:8px 2px 0;padding:8px 12px;border:1px solid #eaded2;border-radius:14px;background:#fffaf5}
+.ep05-timer>div{display:flex;align-items:baseline;gap:7px;min-width:92px}.ep05-timer b{font-variant-numeric:tabular-nums;font-size:17px;color:#a76a50}.ep05-timer span{font-size:9px;color:#938678}.ep05-timer progress{width:100%;height:8px;accent-color:#ba785b}
+.ep05-repeat-warning{padding:10px 12px;border-radius:12px;background:#fff1e7;color:#8c533c;font-size:12px;line-height:1.55}
+.ep05-bonus-options,.ep05-clip-choices{display:flex;flex-direction:column;gap:8px;margin:12px 0}.ep05-bonus-options button,.ep05-clip-choices button{padding:12px 14px;border:1px solid #e8dfd5;border-radius:13px;background:#fff;color:#5c5044;text-align:left}.ep05-bonus-options button.chosen,.ep05-clip-choices button.chosen{border-color:#b9785d;background:#fff3ea;color:#784c38}.ep05-clip-choices{padding:12px;border-radius:14px;background:#f7f1ea}.ep05-clip-choices>b{font-size:11px;color:#8e7865}.ep05-player .season-controls button:disabled{opacity:.4}
+@media(max-width:560px){.ep05-player{padding:8px 10px 0}.ep05-player>.season-cam-visual{flex-basis:145px;height:145px}.ep05-timer{margin:5px 0;padding:7px 10px}.ep05-timer b{font-size:15px}}

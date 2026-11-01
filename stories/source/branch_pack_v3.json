@@ -1,0 +1,6135 @@
+{
+  "meta": {
+    "title": "TOP Transit Love branching scene pack V3",
+    "sourceBasis": "V2.1",
+    "characterIDs": {
+      "ZZX": "朱志鑫",
+      "SXH": "苏新皓",
+      "ZJ": "张极",
+      "ZZY": "张泽禹",
+      "ZH": "左航"
+    },
+    "fictional": true,
+    "notes": "All romantic relationships are fictional; public media details are references, not evidence of real relationships."
+  },
+  "rules": {
+    "schemaVersion": "3.0",
+    "source": "00_source_V2_1.md",
+    "modes": {
+      "A": {
+        "weight": 25,
+        "exPairs": [
+          [
+            "ZZX",
+            "SXH"
+          ],
+          [
+            "ZJ",
+            "ZZY"
+          ]
+        ]
+      },
+      "B": {
+        "weight": 25,
+        "exPairs": [
+          [
+            "ZZX",
+            "SXH"
+          ],
+          [
+            "ZJ",
+            "ZH"
+          ]
+        ]
+      },
+      "C": {
+        "weight": 20,
+        "exPairs": [
+          [
+            "ZZX",
+            "SXH"
+          ]
+        ]
+      },
+      "D": {
+        "weight": 20,
+        "exPairs": [
+          [
+            "ZZX",
+            "SXH"
+          ],
+          [
+            "ZZY",
+            "ZH"
+          ]
+        ]
+      },
+      "E": {
+        "weight": 10,
+        "exPairs": [
+          [
+            "ZZX",
+            "SXH"
+          ],
+          [
+            "ZJ",
+            "ZZY"
+          ]
+        ],
+        "pastUnconfirmed": [
+          [
+            "ZJ",
+            "ZH"
+          ]
+        ]
+      }
+    },
+    "dailyRequired": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "smsDays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "endingsDay": 14,
+      "xRevealDay": 13,
+      "pairingDays": [
+        3,
+        6,
+        10,
+        12
+      ]
+    },
+    "allowedVenueByDay": {
+      "3": [
+        "cafe",
+        "pottery",
+        "bike",
+        "music"
+      ],
+      "6": [
+        "cafe",
+        "pottery",
+        "bike",
+        "music"
+      ],
+      "10": [
+        "shore",
+        "bike",
+        "music",
+        "nightwalk"
+      ],
+      "12": [
+        "cafe",
+        "pottery",
+        "shore",
+        "nightwalk"
+      ]
+    },
+    "pairPolicy": {
+      "nonGCromanceForZZXandSXH": 0,
+      "GCend": "HE",
+      "maxParticipatingExPerPerson": 1
+    },
+    "eventExecution": "transactional, idempotent, scene effects only once, record provenance",
+    "social": {
+      "threadsUsernamePattern": "^[a-z][a-z0-9._]{3,18}$",
+      "publicOnlyAfterBroadcast": true
+    },
+    "sms": {
+      "senders": [
+        "ZZX",
+        "SXH",
+        "ZJ",
+        "ZZY",
+        "ZH"
+      ],
+      "recipientsMustDiffer": true,
+      "maxSentences": 2,
+      "commitTogether": true,
+      "xNoticeStrings": [
+        "【你的X，选择了你】",
+        "【你的X，没有选择你】",
+        "【本季你没有参与节目的正式X】"
+      ]
+    }
+  },
+  "pairScenes": [
+    {
+      "id": "DATE-ZZX-SXH-CAFE",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "SXH"
+      ],
+      "venue": "cafe",
+      "venueLabel": "咖啡馆",
+      "beat": "两人点完饮品，在窗边等叫号；不拍摄私人手机。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你点了两份？"
+        },
+        {
+          "speaker": "SXH",
+          "text": "嗯，一份给你。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "我还没说要吃。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "那我自己吃两份。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "……给我吧。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-SXH-POTTERY",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "SXH"
+      ],
+      "venue": "pottery",
+      "venueLabel": "陶艺工作室",
+      "beat": "工作人员讲解陶艺步骤，嘉宾各自做一只杯子。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "这个杯子歪了。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "歪一点也能用。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "以前你肯定会重新捏。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "以前是以前。你觉得哪个好？"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "就这个。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-SXH-BIKE",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "SXH"
+      ],
+      "venue": "bike",
+      "venueLabel": "骑行绿道",
+      "beat": "两人戴好护具，在低车流绿道骑行。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你骑慢点。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "我还以为你会嫌我慢。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "我怕你又突然加速。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "那你在前面，我跟着。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "别跟太近。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-SXH-MUSIC",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "SXH"
+      ],
+      "venue": "music",
+      "venueLabel": "音乐房",
+      "beat": "两人在公共排练室选一段原创旋律合作。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你想从哪段开始？"
+        },
+        {
+          "speaker": "SXH",
+          "text": "先听你唱完。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "你以前会直接告诉我哪里不对。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "我可以等你问。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "好，那我现在问。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-SXH-SHORE",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "SXH"
+      ],
+      "venue": "shore",
+      "venueLabel": "海边步道",
+      "beat": "两人沿岸边步道散步，不进入危险水域。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "明天的日出时间出来了。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "我看到了。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "青岛那次我叫你没起来。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "这次我定两个闹钟。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "闹钟不管用我再叫一次。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-SXH-NIGHTWALK",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "SXH"
+      ],
+      "venue": "nightwalk",
+      "venueLabel": "夜间散步",
+      "beat": "晚饭后沿小屋公共步道散步，机位取得双方同意。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "还记得2023年那个问题吗？"
+        },
+        {
+          "speaker": "SXH",
+          "text": "哪个？"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "如果看日出选谁。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "你那时候说朱志鑫吧。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "……你还记着。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZJ-CAFE",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZJ"
+      ],
+      "venue": "cafe",
+      "venueLabel": "咖啡馆",
+      "beat": "两人点完饮品，在窗边等叫号；不拍摄私人手机。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你咖啡一口没动。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "太烫了。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "那你刚才还装得很享受？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我在欣赏杯子。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "行，你确实很会欣赏。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZJ-POTTERY",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZJ"
+      ],
+      "venue": "pottery",
+      "venueLabel": "陶艺工作室",
+      "beat": "工作人员讲解陶艺步骤，嘉宾各自做一只杯子。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "我这只是不是像被车压过？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "像，但有个性。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "你是不是不好意思说实话？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我说实话你会重做？"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "不会，我会怪你。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZJ-BIKE",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZJ"
+      ],
+      "venue": "bike",
+      "venueLabel": "骑行绿道",
+      "beat": "两人戴好护具，在低车流绿道骑行。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你到底会不会骑？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "会，你别一直在后面笑。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "我没笑，我在呼吸。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你呼吸怎么有声音？"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "因为风大。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZJ-MUSIC",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZJ"
+      ],
+      "venue": "music",
+      "venueLabel": "音乐房",
+      "beat": "两人在公共排练室选一段原创旋律合作。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你弹这段我接？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "行，你数拍。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "一二三……诶不对。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你这节奏谁跟得上。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "我自己也跟不上。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZJ-SHORE",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZJ"
+      ],
+      "venue": "shore",
+      "venueLabel": "海边步道",
+      "beat": "两人沿岸边步道散步，不进入危险水域。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你怎么一直看海？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "很久没来这种地方了。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "那就慢慢看。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你不催我？"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "出来玩催什么。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZJ-NIGHTWALK",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZJ"
+      ],
+      "venue": "nightwalk",
+      "venueLabel": "夜间散步",
+      "beat": "晚饭后沿小屋公共步道散步，机位取得双方同意。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你安静得我都有点紧张。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你可以不用一直说话。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "我不说，你也不说。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "那听风。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "行，今天播客停更。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZZY-CAFE",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZZY"
+      ],
+      "venue": "cafe",
+      "venueLabel": "咖啡馆",
+      "beat": "两人点完饮品，在窗边等叫号；不拍摄私人手机。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你想吃甜的还是咸的？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "甜的。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "我以为你会纠结半天。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "又不是所有事都要纠结。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "说得也是。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZZY-POTTERY",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZZY"
+      ],
+      "venue": "pottery",
+      "venueLabel": "陶艺工作室",
+      "beat": "工作人员讲解陶艺步骤，嘉宾各自做一只杯子。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你这边边角处理得很整齐。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你也不差。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "别谦虚，明显你常干手工。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "我是会煎蛋，不是会捏杯子。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "这俩差得有点多。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZZY-BIKE",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZZY"
+      ],
+      "venue": "bike",
+      "venueLabel": "骑行绿道",
+      "beat": "两人戴好护具，在低车流绿道骑行。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你骑那么靠外干嘛？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "给你让路。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "我又不是过不去。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "那你超过我。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "比赛开始了是吧。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZZY-MUSIC",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZZY"
+      ],
+      "venue": "music",
+      "venueLabel": "音乐房",
+      "beat": "两人在公共排练室选一段原创旋律合作。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你这句想改吗？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "我想把尾音留长。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "试试，我给你弹。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你不会觉得拖？"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "听完再说。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZZY-SHORE",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZZY"
+      ],
+      "venue": "shore",
+      "venueLabel": "海边步道",
+      "beat": "两人沿岸边步道散步，不进入危险水域。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "浪今天还挺小。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你像来测评海浪的。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "那我给它打个七分。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "剩下三分呢？"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "扣在你没带水。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZZY-NIGHTWALK",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZZY"
+      ],
+      "venue": "nightwalk",
+      "venueLabel": "夜间散步",
+      "beat": "晚饭后沿小屋公共步道散步，机位取得双方同意。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你看路灯都关一半了。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "省电。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "你是真能把气氛聊实际。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "不然讲什么？"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "讲你今天累不累。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZH-CAFE",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZH"
+      ],
+      "venue": "cafe",
+      "venueLabel": "咖啡馆",
+      "beat": "两人点完饮品，在窗边等叫号；不拍摄私人手机。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你坐窗边吧。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你不怕晒？"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "我带了帽子。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "那帽子借我看看。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "你怎么临时改主意。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZH-POTTERY",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZH"
+      ],
+      "venue": "pottery",
+      "venueLabel": "陶艺工作室",
+      "beat": "工作人员讲解陶艺步骤，嘉宾各自做一只杯子。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "我捏歪了。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "等干了就是艺术。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "你这安慰有点敷衍。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "不是，真挺有意思。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "那我当你在夸。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZH-BIKE",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZH"
+      ],
+      "venue": "bike",
+      "venueLabel": "骑行绿道",
+      "beat": "两人戴好护具，在低车流绿道骑行。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你这车是不是调高了？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "嗯，正好。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "我骑你的肯定够不着。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你要试吗？"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "不试，我惜命。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZH-MUSIC",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZH"
+      ],
+      "venue": "music",
+      "venueLabel": "音乐房",
+      "beat": "两人在公共排练室选一段原创旋律合作。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你写的这段挺妙。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你真听懂了？"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "不是每个词，但听得出意思。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "那我再讲一遍。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "行。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZH-SHORE",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZH"
+      ],
+      "venue": "shore",
+      "venueLabel": "海边步道",
+      "beat": "两人沿岸边步道散步，不进入危险水域。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你拍照别总躲镜头。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我喜欢拍别人。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "今天换我拍你。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "那你拍快点。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "别动。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZX-ZH-NIGHTWALK",
+      "type": "date",
+      "participants": [
+        "ZZX",
+        "ZH"
+      ],
+      "venue": "nightwalk",
+      "venueLabel": "夜间散步",
+      "beat": "晚饭后沿小屋公共步道散步，机位取得双方同意。",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "你这么晚还出来？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "有点闷。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "要不要走一圈？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "走，别聊太沉重的。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "我正想说这个。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZJ-CAFE",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZJ"
+      ],
+      "venue": "cafe",
+      "venueLabel": "咖啡馆",
+      "beat": "两人点完饮品，在窗边等叫号；不拍摄私人手机。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "你菜单看三遍了。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我怕点错。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "点错了换不就行。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你今天挺放松啊。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "不放松喝咖啡干嘛。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZJ-POTTERY",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZJ"
+      ],
+      "venue": "pottery",
+      "venueLabel": "陶艺工作室",
+      "beat": "工作人员讲解陶艺步骤，嘉宾各自做一只杯子。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "你看这个是不是塌了。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "是你太着急。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "你可别笑我。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我也塌过。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "那你还笑。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZJ-BIKE",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZJ"
+      ],
+      "venue": "bike",
+      "venueLabel": "骑行绿道",
+      "beat": "两人戴好护具，在低车流绿道骑行。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "这坡下去你别冲太快。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你还提醒我呢？"
+        },
+        {
+          "speaker": "SXH",
+          "text": "提醒你是为了不追你。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "行我刹车。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "别急刹！"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZJ-MUSIC",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZJ"
+      ],
+      "venue": "music",
+      "venueLabel": "音乐房",
+      "beat": "两人在公共排练室选一段原创旋律合作。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "这个节奏我数给你。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你数得太认真了。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "那你来。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我来就更乱了。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "知道就好。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZJ-SHORE",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZJ"
+      ],
+      "venue": "shore",
+      "venueLabel": "海边步道",
+      "beat": "两人沿岸边步道散步，不进入危险水域。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "今天太阳这么大你还穿外套。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "防晒。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "这理由很合理。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你有意见？"
+        },
+        {
+          "speaker": "SXH",
+          "text": "没有，我想借一件。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZJ-NIGHTWALK",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZJ"
+      ],
+      "venue": "nightwalk",
+      "venueLabel": "夜间散步",
+      "beat": "晚饭后沿小屋公共步道散步，机位取得双方同意。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "你怎么走得这么快？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我以为你跟上了。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "你刚才又说要放松。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "好好好，慢一点。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "这才对。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZZY-CAFE",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZZY"
+      ],
+      "venue": "cafe",
+      "venueLabel": "咖啡馆",
+      "beat": "两人点完饮品，在窗边等叫号；不拍摄私人手机。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "你觉得别人说没事就是真没事吗？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "看语气吧。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "那不说清楚怎么办。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "等他想说的时候问一次。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "问一次就够？"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZZY-POTTERY",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZZY"
+      ],
+      "venue": "pottery",
+      "venueLabel": "陶艺工作室",
+      "beat": "工作人员讲解陶艺步骤，嘉宾各自做一只杯子。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "你连颜色都按顺序摆。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "不然找不到。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "这叫职业病。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "这叫效率。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "行，我服。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZZY-BIKE",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZZY"
+      ],
+      "venue": "bike",
+      "venueLabel": "骑行绿道",
+      "beat": "两人戴好护具，在低车流绿道骑行。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "你怎么还带地图？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "怕迷路。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "导航不是有吗。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "手机也会没电。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "你准备挺充分。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZZY-MUSIC",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZZY"
+      ],
+      "venue": "music",
+      "venueLabel": "音乐房",
+      "beat": "两人在公共排练室选一段原创旋律合作。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "你唱高一点我试合声。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "行。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "不对，刚那句是我的问题。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你居然主动承认。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "少说两句。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZZY-SHORE",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZZY"
+      ],
+      "venue": "shore",
+      "venueLabel": "海边步道",
+      "beat": "两人沿岸边步道散步，不进入危险水域。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "你是不是不爱吃正餐？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "我也吃，就是有时吃沙拉方便。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "你今天运动量不小。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "知道了，我晚点吃点热的。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "这还差不多。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZZY-NIGHTWALK",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZZY"
+      ],
+      "venue": "nightwalk",
+      "venueLabel": "夜间散步",
+      "beat": "晚饭后沿小屋公共步道散步，机位取得双方同意。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "你刚才一直在想什么？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "想今天那个问题。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "那你想出来没？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "还差一点。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "行，慢慢来。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZH-CAFE",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZH"
+      ],
+      "venue": "cafe",
+      "venueLabel": "咖啡馆",
+      "beat": "两人点完饮品，在窗边等叫号；不拍摄私人手机。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "你点了什么？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "最简单的。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "你不想研究一下菜单？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我更想先坐下来。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "你还真不急。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZH-POTTERY",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZH"
+      ],
+      "venue": "pottery",
+      "venueLabel": "陶艺工作室",
+      "beat": "工作人员讲解陶艺步骤，嘉宾各自做一只杯子。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "先把底座做平。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你跟泥也要讲流程。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "不讲等会倒了。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "倒了就给它起名事故现场。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "……也行。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZH-BIKE",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZH"
+      ],
+      "venue": "bike",
+      "venueLabel": "骑行绿道",
+      "beat": "两人戴好护具，在低车流绿道骑行。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "你这车速突然变快了。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "风顺。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "那你等我一下。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我在前面路口等。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "说好了。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZH-MUSIC",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZH"
+      ],
+      "venue": "music",
+      "venueLabel": "音乐房",
+      "beat": "两人在公共排练室选一段原创旋律合作。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "这段我打节拍。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你别打太整齐。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "不整齐怎么算节拍？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "就想听点意外。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "那你先示范。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZH-SHORE",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZH"
+      ],
+      "venue": "shore",
+      "venueLabel": "海边步道",
+      "beat": "两人沿岸边步道散步，不进入危险水域。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "你来海边还带耳机。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我没放音乐。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "那带着干嘛？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "习惯。你也有吧。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "有。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-SXH-ZH-NIGHTWALK",
+      "type": "date",
+      "participants": [
+        "SXH",
+        "ZH"
+      ],
+      "venue": "nightwalk",
+      "venueLabel": "夜间散步",
+      "beat": "晚饭后沿小屋公共步道散步，机位取得双方同意。",
+      "dialogue": [
+        {
+          "speaker": "SXH",
+          "text": "你是不是非要把每件事安排好？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "不然容易出错。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "错一次也不一定坏。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我知道，正在学。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "那今天先别管路线。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": 0
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZJ-ZZY-CAFE",
+      "type": "date",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "venue": "cafe",
+      "venueLabel": "咖啡馆",
+      "beat": "两人点完饮品，在窗边等叫号；不拍摄私人手机。",
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "你怎么还记得我以前不喝这个？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "认识你这么多年白认识了？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "有时候我觉得你比我还了解我。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "少来，你自己点。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "行。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZJ-ZZY-POTTERY",
+      "type": "date",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "venue": "pottery",
+      "venueLabel": "陶艺工作室",
+      "beat": "工作人员讲解陶艺步骤，嘉宾各自做一只杯子。",
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "以前你做手工会不会也这么急？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你以前还帮我收拾烂摊子呢。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "这次你自己收。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "行，我自己收。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我没说不帮。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZJ-ZZY-BIKE",
+      "type": "date",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "venue": "bike",
+      "venueLabel": "骑行绿道",
+      "beat": "两人戴好护具，在低车流绿道骑行。",
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "这路像以前放学那条。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "那条哪有这么宽。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我说的是感觉。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你以前骑车也爱抢前面。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你不也追得上。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZJ-ZZY-MUSIC",
+      "type": "date",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "venue": "music",
+      "venueLabel": "音乐房",
+      "beat": "两人在公共排练室选一段原创旋律合作。",
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "你还记得我们第一次一起唱什么吗？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "记得。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "今天别唱老歌了吧。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "那你选新的。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你先开头。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZJ-ZZY-SHORE",
+      "type": "date",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "venue": "shore",
+      "venueLabel": "海边步道",
+      "beat": "两人沿岸边步道散步，不进入危险水域。",
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "我们好像一直在赶路。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "以前赶飞机，现在赶日落。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你说得还挺像回事。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你别笑。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "没有，听着呢。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZJ-ZZY-NIGHTWALK",
+      "type": "date",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "venue": "nightwalk",
+      "venueLabel": "夜间散步",
+      "beat": "晚饭后沿小屋公共步道散步，机位取得双方同意。",
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "你能不能别老猜我想什么？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "那你告诉我。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我今天想慢一点走。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "好。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你看，也不难。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZJ-ZH-CAFE",
+      "type": "date",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "venue": "cafe",
+      "venueLabel": "咖啡馆",
+      "beat": "两人点完饮品，在窗边等叫号；不拍摄私人手机。",
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "航酱，你看窗外。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "别在外面这么叫。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "那私下可以？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你再说我走了。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "好好好不叫。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZJ-ZH-POTTERY",
+      "type": "date",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "venue": "pottery",
+      "venueLabel": "陶艺工作室",
+      "beat": "工作人员讲解陶艺步骤，嘉宾各自做一只杯子。",
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "你做这个好小一只。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你能不能不要点评体积。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我是在夸。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我听不出来。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "那我重新夸一次。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZJ-ZH-BIKE",
+      "type": "date",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "venue": "bike",
+      "venueLabel": "骑行绿道",
+      "beat": "两人戴好护具，在低车流绿道骑行。",
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "之前受伤的时候你是不是最烦别人问？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你还记得？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "记得你说想自己试试。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我那会儿说话挺冲。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我知道不是冲我。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZJ-ZH-MUSIC",
+      "type": "date",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "venue": "music",
+      "venueLabel": "音乐房",
+      "beat": "两人在公共排练室选一段原创旋律合作。",
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "你不是说想学这段吗？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你怎么还记得。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你那时天天放。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "现在换口味了。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "那我再记。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZJ-ZH-SHORE",
+      "type": "date",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "venue": "shore",
+      "venueLabel": "海边步道",
+      "beat": "两人沿岸边步道散步，不进入危险水域。",
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "你还用那个旧头像吗？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你先别问我。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我只是想起来了。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "那就留在以前吧。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "……也行。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZJ-ZH-NIGHTWALK",
+      "type": "date",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "venue": "nightwalk",
+      "venueLabel": "夜间散步",
+      "beat": "晚饭后沿小屋公共步道散步，机位取得双方同意。",
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "你今天怎么不回我玩笑？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "因为这次想认真说。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "那你说。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "有些话我不是只对你开玩笑。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我在听。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZY-ZH-CAFE",
+      "type": "date",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "venue": "cafe",
+      "venueLabel": "咖啡馆",
+      "beat": "两人点完饮品，在窗边等叫号；不拍摄私人手机。",
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "你为什么替我点好这杯？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你刚才一直看它。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你这人观察得还挺细。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "没办法。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "那下次换我请。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZY-ZH-POTTERY",
+      "type": "date",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "venue": "pottery",
+      "venueLabel": "陶艺工作室",
+      "beat": "工作人员讲解陶艺步骤，嘉宾各自做一只杯子。",
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "你那只杯子怎么放到最外面？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "让它先晾着。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你总把自己的放后面。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "没有吧。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "有，我都看到了。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZY-ZH-BIKE",
+      "type": "date",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "venue": "bike",
+      "venueLabel": "骑行绿道",
+      "beat": "两人戴好护具，在低车流绿道骑行。",
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "你要不要休息一下？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你先走，我跟得上。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "我不是赶你。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我知道。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "那一起慢点。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZY-ZH-MUSIC",
+      "type": "date",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "venue": "music",
+      "venueLabel": "音乐房",
+      "beat": "两人在公共排练室选一段原创旋律合作。",
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "都一点半了你还陪我练？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你刚才那句还没唱顺。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你可以先走。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我也想听你唱顺。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "……好，再来一次。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZY-ZH-SHORE",
+      "type": "date",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "venue": "shore",
+      "venueLabel": "海边步道",
+      "beat": "两人沿岸边步道散步，不进入危险水域。",
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "你之前说想看日出。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你还记得？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "记得。这次一起？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你起得来？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "起不来你叫我。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    },
+    {
+      "id": "DATE-ZZY-ZH-NIGHTWALK",
+      "type": "date",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "venue": "nightwalk",
+      "venueLabel": "夜间散步",
+      "beat": "晚饭后沿小屋公共步道散步，机位取得双方同意。",
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "你刚才为什么不问我？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我怕打扰你。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你可以问。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "那下次我问。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "不是下次，现在也行。"
+        }
+      ],
+      "minDay": 3,
+      "maxDay": 12,
+      "requires": [
+        "both_available",
+        "both_consented",
+        "slot_open"
+      ],
+      "effects": {
+        "friendship": 2,
+        "romance": "conditional_free_trio_only"
+      },
+      "directorChoices": [
+        "documentary",
+        "chemistry",
+        "ensemble"
+      ],
+      "shootingConsent": true,
+      "fallback": "DECLINE-OR-SOLO",
+      "canon": true
+    }
+  ],
+  "modeScenes": [
+    {
+      "id": "MODE-A-D00",
+      "mode": "A",
+      "day": 0,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "今天再见到熟人，心里还挺奇怪。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你别把所有熟悉都说成奇怪。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-A-D01",
+      "mode": "A",
+      "day": 1,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "你俩连谁洗碗都知道？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "知道不代表现在还想一样。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 1
+    },
+    {
+      "id": "MODE-A-D02",
+      "mode": "A",
+      "day": 2,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "你选这个饼干，我还以为你改口味了。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "人会变，零食不一定。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 2
+    },
+    {
+      "id": "MODE-A-D03",
+      "mode": "A",
+      "day": 3,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "你们去约会，我一个人也挺好。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "回来给你带唱片。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 3
+    },
+    {
+      "id": "MODE-A-D04",
+      "mode": "A",
+      "day": 4,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "信里写了很多年，但没写以后。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "可能以前也不知道以后。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-A-D05",
+      "mode": "A",
+      "day": 5,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "你们总有说不完的过去。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "那今天可以先聊现在。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 5
+    },
+    {
+      "id": "MODE-A-D06",
+      "mode": "A",
+      "day": 6,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "我不想再拿老朋友的身份遮掩。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "那你也别拿开玩笑来试我。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 6
+    },
+    {
+      "id": "MODE-A-D07",
+      "mode": "A",
+      "day": 7,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "以前一起唱歌，没觉得会变这么难。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "今天也不必刻意回到从前。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 7
+    },
+    {
+      "id": "MODE-A-D08",
+      "mode": "A",
+      "day": 8,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "那张登机牌你还留着？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "嗯。不是为了让你回来。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-A-D09",
+      "mode": "A",
+      "day": 9,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "你选他的原因是默契吗？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "是我没认真想自己的习惯。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 9
+    },
+    {
+      "id": "MODE-A-D10",
+      "mode": "A",
+      "day": 10,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "我今天想先听你怎么想。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "这次不急着替我下结论？"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 10
+    },
+    {
+      "id": "MODE-A-D11",
+      "mode": "A",
+      "day": 11,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "有的礼物送出去就不该计较回礼。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "但能好好说谢谢。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 11
+    },
+    {
+      "id": "MODE-A-D12",
+      "mode": "A",
+      "day": 12,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "这次我不想只靠从前决定。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "我也是。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 12
+    },
+    {
+      "id": "MODE-A-D13",
+      "mode": "A",
+      "day": 13,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "你们是X我不意外。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "但你不是谁故事里的道具。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-A-D14",
+      "mode": "A",
+      "day": 14,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "无论最后怎样，我希望以后不用躲着说话。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "好，我们重新学。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 14
+    },
+    {
+      "id": "MODE-B-D00",
+      "mode": "B",
+      "day": 0,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "他今天还叫我那个称呼。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你要是不喜欢，我以后不叫。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-B-D01",
+      "mode": "B",
+      "day": 1,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "有些人一开口就跟以前一样。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "一样不代表没变。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 1
+    },
+    {
+      "id": "MODE-B-D02",
+      "mode": "B",
+      "day": 2,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "你还记得那次训练休息？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我记得你后来没再拿受伤开玩笑。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 2
+    },
+    {
+      "id": "MODE-B-D03",
+      "mode": "B",
+      "day": 3,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "约会结束以后，不用送我到门口。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我就是顺路。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 3
+    },
+    {
+      "id": "MODE-B-D04",
+      "mode": "B",
+      "day": 4,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "那封信我写了又删。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "最后留下来的反而最好懂。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-B-D05",
+      "mode": "B",
+      "day": 5,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "你们是不是总用玩笑把事带过去？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "以前是。现在不想。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 5
+    },
+    {
+      "id": "MODE-B-D06",
+      "mode": "B",
+      "day": 6,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "我不知道要不要再跟你合作。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "你自己决定，我等答复。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 6
+    },
+    {
+      "id": "MODE-B-D07",
+      "mode": "B",
+      "day": 7,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "这段节奏我以前都记得。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "今天不必照着以前弹。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 7
+    },
+    {
+      "id": "MODE-B-D08",
+      "mode": "B",
+      "day": 8,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "看见头像那刻我有点想笑。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我知道，挺幼稚的。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-B-D09",
+      "mode": "B",
+      "day": 9,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "刚才你被落下了，怎么不叫我？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你已经朝这边走了。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 9
+    },
+    {
+      "id": "MODE-B-D10",
+      "mode": "B",
+      "day": 10,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "我原来以为这趟只会找回过去。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "也许会发现别的。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 10
+    },
+    {
+      "id": "MODE-B-D11",
+      "mode": "B",
+      "day": 11,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "礼物不一定要还给当初送的人。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "同意，选现在需要的人。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 11
+    },
+    {
+      "id": "MODE-B-D12",
+      "mode": "B",
+      "day": 12,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "你是不是早就想说那句话？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "想过，但今天不想逼谁。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 12
+    },
+    {
+      "id": "MODE-B-D13",
+      "mode": "B",
+      "day": 13,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "我们确实在一起过。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "也确实有结束的理由。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-B-D14",
+      "mode": "B",
+      "day": 14,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "今天我想按自己的心意来。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "那我也认真告诉你我的。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 14
+    },
+    {
+      "id": "MODE-C-D00",
+      "mode": "C",
+      "day": 0,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "你们不会真在猜谁和谁分过吧。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "不一定谁都有。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-C-D01",
+      "mode": "C",
+      "day": 1,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "我不想让陌生人替我决定关系。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "那就多给他们一点友情镜头。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 1
+    },
+    {
+      "id": "MODE-C-D02",
+      "mode": "C",
+      "day": 2,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "一块旧饼干也能被当成证据？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "互联网侦探挺忙。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 2
+    },
+    {
+      "id": "MODE-C-D03",
+      "mode": "C",
+      "day": 3,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZZX"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "约会就是了解人，不代表确认什么。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "同意。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 3
+    },
+    {
+      "id": "MODE-C-D04",
+      "mode": "C",
+      "day": 4,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "没有写前任的信，我反倒松一口气。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "有些关系没名字也很重要。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-C-D05",
+      "mode": "C",
+      "day": 5,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "要不今天就别猜谁是谁的X。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "终于说了句正常话。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 5
+    },
+    {
+      "id": "MODE-C-D06",
+      "mode": "C",
+      "day": 6,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "你选这首不是因为有暗示吧？"
+        },
+        {
+          "speaker": "ZH",
+          "text": "因为好听。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 6
+    },
+    {
+      "id": "MODE-C-D07",
+      "mode": "C",
+      "day": 7,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "我觉得不用把所有合作都叫糖。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "合作好看就够了。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 7
+    },
+    {
+      "id": "MODE-C-D08",
+      "mode": "C",
+      "day": 8,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "我留着的是练歌稿，不是情书。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "嗯，我知道。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-C-D09",
+      "mode": "C",
+      "day": 9,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "我不选你也不是不重视你。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我明白，你不用提前道歉。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 9
+    },
+    {
+      "id": "MODE-C-D10",
+      "mode": "C",
+      "day": 10,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "如果大家都单身，是不是更像观察节目？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你忘了还是有X。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 10
+    },
+    {
+      "id": "MODE-C-D11",
+      "mode": "C",
+      "day": 11,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "我送你节拍贴是觉得合适。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "谢谢，不用解释得跟答辩一样。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 11
+    },
+    {
+      "id": "MODE-C-D12",
+      "mode": "C",
+      "day": 12,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "我最近确实更在意和谁说话舒服。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "那就从舒服开始。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 12
+    },
+    {
+      "id": "MODE-C-D13",
+      "mode": "C",
+      "day": 13,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "其实我们三个人都没正式交往过。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "但一起长大的经历是真的。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-C-D14",
+      "mode": "C",
+      "day": 14,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "我不想为了一个结局去喜欢谁。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "那就好好选自己的。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 14
+    },
+    {
+      "id": "MODE-D-D00",
+      "mode": "D",
+      "day": 0,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "我以为今天见你会尴尬。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "结果呢？"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-D-D01",
+      "mode": "D",
+      "day": 1,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "你俩说话都不用把话说完。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "以前这样也误会过。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 1
+    },
+    {
+      "id": "MODE-D-D02",
+      "mode": "D",
+      "day": 2,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "你不用每次都给我解释。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "有些解释本来就欠着。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 2
+    },
+    {
+      "id": "MODE-D-D03",
+      "mode": "D",
+      "day": 3,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "我不想夹在你们过去里面。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我们也不应该让你夹着。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 3
+    },
+    {
+      "id": "MODE-D-D04",
+      "mode": "D",
+      "day": 4,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "那封信我写完又重写。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我知道，你写字老涂掉。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-D-D05",
+      "mode": "D",
+      "day": 5,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "你选别人没什么。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "你说没什么我反而更想解释。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 5
+    },
+    {
+      "id": "MODE-D-D06",
+      "mode": "D",
+      "day": 6,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "我只是来唱个歌，你们别这么严肃。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "谁严肃了。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 6
+    },
+    {
+      "id": "MODE-D-D07",
+      "mode": "D",
+      "day": 7,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "一起练到一点半的事我还记得。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "那晚你最后一句终于唱顺了。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 7
+    },
+    {
+      "id": "MODE-D-D08",
+      "mode": "D",
+      "day": 8,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "这东西不是分手纪念。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "我也没想把它变成那个。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-D-D09",
+      "mode": "D",
+      "day": 9,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "这次我没选你，是因为我怕又回到原地。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我也不想回原地。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 9
+    },
+    {
+      "id": "MODE-D-D10",
+      "mode": "D",
+      "day": 10,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "我现在可以把话讲完了。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "我也可以。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 10
+    },
+    {
+      "id": "MODE-D-D11",
+      "mode": "D",
+      "day": 11,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "礼物给谁，你自己想清楚就行。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "我已经想过了。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 11
+    },
+    {
+      "id": "MODE-D-D12",
+      "mode": "D",
+      "day": 12,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "这次我不是想让你等。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "那你想怎样？"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 12
+    },
+    {
+      "id": "MODE-D-D13",
+      "mode": "D",
+      "day": 13,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "我们过去在一起过，也确实错过了。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "现在我能承认我也有责任。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-D-D14",
+      "mode": "D",
+      "day": 14,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "如果还有机会，我会先走过来。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "那我会认真看你走到哪。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 14
+    },
+    {
+      "id": "MODE-E-D00",
+      "mode": "E",
+      "day": 0,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "他俩看起来还是那么熟。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "熟不等于什么都不用说。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-E-D01",
+      "mode": "E",
+      "day": 1,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "你怎么对谁都这么爱开玩笑？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "这次我其实有点紧张。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 1
+    },
+    {
+      "id": "MODE-E-D02",
+      "mode": "E",
+      "day": 2,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "你以前那个头像到底怎么想的？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "那时候觉得好玩，后来就忘了换。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 2
+    },
+    {
+      "id": "MODE-E-D03",
+      "mode": "E",
+      "day": 3,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "你和他出去，我是有一点在意。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "在意什么你可以慢慢想。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 3
+    },
+    {
+      "id": "MODE-E-D04",
+      "mode": "E",
+      "day": 4,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "介绍信不是为了让你原谅我。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "我知道，能写出来已经难了。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-E-D05",
+      "mode": "E",
+      "day": 5,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "别把我当成谁的替代选项。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我不会。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 5
+    },
+    {
+      "id": "MODE-E-D06",
+      "mode": "E",
+      "day": 6,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "你又拿昵称开玩笑。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "以后我问他喜不喜欢听。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 6
+    },
+    {
+      "id": "MODE-E-D07",
+      "mode": "E",
+      "day": 7,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZZY"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "我们过去一起唱的那首，你还想唱吗？"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "换首新的。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 7
+    },
+    {
+      "id": "MODE-E-D08",
+      "mode": "E",
+      "day": 8,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "那张头像的照片不是恋爱证明。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我知道，可我当时确实在意你怎么看。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": false,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-E-D09",
+      "mode": "E",
+      "day": 9,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "我不想再因为习惯选错。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "那就选自己想要的。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 9
+    },
+    {
+      "id": "MODE-E-D10",
+      "mode": "E",
+      "day": 10,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "你不用在我们两个之间做裁判。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我也没想当。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 10
+    },
+    {
+      "id": "MODE-E-D11",
+      "mode": "E",
+      "day": 11,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "我把礼物留着不是想绑住你。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我知道。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 11
+    },
+    {
+      "id": "MODE-E-D12",
+      "mode": "E",
+      "day": 12,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZH",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "如果你有话说，就别只开玩笑。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "这次我认真。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 12
+    },
+    {
+      "id": "MODE-E-D13",
+      "mode": "E",
+      "day": 13,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZJ",
+        "ZH"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "我和张泽禹曾正式交往。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "我和你的暧昧没有正式确认，这也是真的。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 13
+    },
+    {
+      "id": "MODE-E-D14",
+      "mode": "E",
+      "day": 14,
+      "phase": "conditional_interlude",
+      "participants": [
+        "ZZY",
+        "ZJ"
+      ],
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "我不要因为你以前选过我就被选。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "那就从今天的答案开始。"
+        }
+      ],
+      "requires": [
+        "mode_matches",
+        "participants_present_in_authorized_public_scene"
+      ],
+      "fallback": "SKIP_WITH_DIARY_NOTE",
+      "canon": true,
+      "broadcastAllowed": true,
+      "unlockDay": 14
+    }
+  ],
+  "endingScenes": [
+    {
+      "id": "ENDING-JY-DAY12",
+      "route": "JY",
+      "day": 12,
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "以前我总觉得你能猜到。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "我猜不到，你现在说。"
+        }
+      ],
+      "requirements": [
+        "route_selected",
+        "mutual_consent",
+        "required_prerequisites_met"
+      ],
+      "canonical": true
+    },
+    {
+      "id": "ENDING-JY-DAY14",
+      "route": "JY",
+      "day": 14,
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "要是重新试，就不要把我们当成从前那两个小孩。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我知道，重新认识也挺好。"
+        }
+      ],
+      "requirements": [
+        "route_selected",
+        "mutual_consent",
+        "required_prerequisites_met"
+      ],
+      "canonical": true
+    },
+    {
+      "id": "ENDING-JH-DAY12",
+      "route": "JH",
+      "day": 12,
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "你说下次，是真的想有下次吗？"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "是，这回不拿玩笑掩饰。"
+        }
+      ],
+      "requirements": [
+        "route_selected",
+        "mutual_consent",
+        "required_prerequisites_met"
+      ],
+      "canonical": true
+    },
+    {
+      "id": "ENDING-JH-DAY14",
+      "route": "JH",
+      "day": 14,
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "这次不是开玩笑，我想和你认真试试。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "那你听我把话说完。"
+        }
+      ],
+      "requirements": [
+        "route_selected",
+        "mutual_consent",
+        "required_prerequisites_met"
+      ],
+      "canonical": true
+    },
+    {
+      "id": "ENDING-MH-DAY12",
+      "route": "MH",
+      "day": 12,
+      "dialogue": [
+        {
+          "speaker": "ZZY",
+          "text": "你想看的日出，我现在也想去。"
+        },
+        {
+          "speaker": "ZH",
+          "text": "你不用为了我喜欢它。"
+        }
+      ],
+      "requirements": [
+        "route_selected",
+        "mutual_consent",
+        "required_prerequisites_met"
+      ],
+      "canonical": true
+    },
+    {
+      "id": "ENDING-MH-DAY14",
+      "route": "MH",
+      "day": 14,
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "你终于不再问别人为什么让我回头。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "我自己想走过来。"
+        }
+      ],
+      "requirements": [
+        "route_selected",
+        "mutual_consent",
+        "required_prerequisites_met"
+      ],
+      "canonical": true
+    },
+    {
+      "id": "ENDING-SOLO-DAY12",
+      "route": "SOLO",
+      "day": 12,
+      "dialogue": [
+        {
+          "speaker": "ZJ",
+          "text": "不为了配对而配对，也算认真。"
+        },
+        {
+          "speaker": "ZZY",
+          "text": "对，明天依然可以好好说话。"
+        }
+      ],
+      "requirements": [
+        "route_selected",
+        "true",
+        "required_prerequisites_met"
+      ],
+      "canonical": true
+    },
+    {
+      "id": "ENDING-SOLO-DAY14",
+      "route": "SOLO",
+      "day": 14,
+      "dialogue": [
+        {
+          "speaker": "ZH",
+          "text": "一个人离开不等于白来。"
+        },
+        {
+          "speaker": "ZJ",
+          "text": "我这次认识了现在的自己。"
+        }
+      ],
+      "requirements": [
+        "route_selected",
+        "true",
+        "required_prerequisites_met"
+      ],
+      "canonical": true
+    }
+  ],
+  "fallbacks": {
+    "DECLINE-OR-SOLO": {
+      "condition": "one or both decline or unavailable",
+      "action": "cancel_pair_date_and_show_individual_public_area_scene",
+      "dialogue": [
+        {
+          "speaker": "CREW",
+          "text": "这次约会没有成行，节目组将安排各自的自由活动，不对外解释私人原因。"
+        }
+      ]
+    },
+    "SKIP_WITH_DIARY_NOTE": {
+      "condition": "mode_scene_participant_absent",
+      "action": "hold_scene_until_valid_slot_or_show_nonidentifying_recap",
+      "dialogue": [
+        {
+          "speaker": "CREW",
+          "text": "这一段没有可播出的有效素材。"
+        }
+      ]
+    },
+    "GC_REPAIR": {
+      "condition": "day13 && gc_communication_not_completed",
+      "action": "trigger_voluntary_public_bench_conversation_before_choice",
+      "dialogue": [
+        {
+          "speaker": "ZZX",
+          "text": "我不想再用不说话来回答你。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "那我先听，你说完我再答。"
+        },
+        {
+          "speaker": "ZZX",
+          "text": "我想和你在一起，但需要我们都可以说不。"
+        },
+        {
+          "speaker": "SXH",
+          "text": "我也想。以后问清楚，不替你决定。"
+        }
+      ]
+    }
+  },
+  "acceptanceCases": [
+    {
+      "name": "mode-A-whole-run",
+      "mode": "A",
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "expectedX": [
+        [
+          "ZZX",
+          "SXH"
+        ],
+        [
+          "ZJ",
+          "ZZY"
+        ]
+      ]
+    },
+    {
+      "name": "mode-B-whole-run",
+      "mode": "B",
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "expectedX": [
+        [
+          "ZZX",
+          "SXH"
+        ],
+        [
+          "ZJ",
+          "ZH"
+        ]
+      ]
+    },
+    {
+      "name": "mode-C-whole-run",
+      "mode": "C",
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "expectedX": [
+        [
+          "ZZX",
+          "SXH"
+        ]
+      ]
+    },
+    {
+      "name": "mode-D-whole-run",
+      "mode": "D",
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "expectedX": [
+        [
+          "ZZX",
+          "SXH"
+        ],
+        [
+          "ZZY",
+          "ZH"
+        ]
+      ]
+    },
+    {
+      "name": "mode-E-whole-run",
+      "mode": "E",
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "expectedX": [
+        [
+          "ZZX",
+          "SXH"
+        ],
+        [
+          "ZJ",
+          "ZZY"
+        ]
+      ]
+    },
+    {
+      "name": "day-3-ZZX-SXH",
+      "day": 3,
+      "pair": [
+        "ZZX",
+        "SXH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-3-ZZX-ZJ",
+      "day": 3,
+      "pair": [
+        "ZZX",
+        "ZJ"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-3-ZZX-ZZY",
+      "day": 3,
+      "pair": [
+        "ZZX",
+        "ZZY"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-3-ZZX-ZH",
+      "day": 3,
+      "pair": [
+        "ZZX",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-3-SXH-ZJ",
+      "day": 3,
+      "pair": [
+        "SXH",
+        "ZJ"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-3-SXH-ZZY",
+      "day": 3,
+      "pair": [
+        "SXH",
+        "ZZY"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-3-SXH-ZH",
+      "day": 3,
+      "pair": [
+        "SXH",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-3-ZJ-ZZY",
+      "day": 3,
+      "pair": [
+        "ZJ",
+        "ZZY"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-3-ZJ-ZH",
+      "day": 3,
+      "pair": [
+        "ZJ",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-3-ZZY-ZH",
+      "day": 3,
+      "pair": [
+        "ZZY",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-6-ZZX-SXH",
+      "day": 6,
+      "pair": [
+        "ZZX",
+        "SXH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-6-ZZX-ZJ",
+      "day": 6,
+      "pair": [
+        "ZZX",
+        "ZJ"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-6-ZZX-ZZY",
+      "day": 6,
+      "pair": [
+        "ZZX",
+        "ZZY"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-6-ZZX-ZH",
+      "day": 6,
+      "pair": [
+        "ZZX",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-6-SXH-ZJ",
+      "day": 6,
+      "pair": [
+        "SXH",
+        "ZJ"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-6-SXH-ZZY",
+      "day": 6,
+      "pair": [
+        "SXH",
+        "ZZY"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-6-SXH-ZH",
+      "day": 6,
+      "pair": [
+        "SXH",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-6-ZJ-ZZY",
+      "day": 6,
+      "pair": [
+        "ZJ",
+        "ZZY"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-6-ZJ-ZH",
+      "day": 6,
+      "pair": [
+        "ZJ",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-6-ZZY-ZH",
+      "day": 6,
+      "pair": [
+        "ZZY",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-10-ZZX-SXH",
+      "day": 10,
+      "pair": [
+        "ZZX",
+        "SXH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-10-ZZX-ZJ",
+      "day": 10,
+      "pair": [
+        "ZZX",
+        "ZJ"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-10-ZZX-ZZY",
+      "day": 10,
+      "pair": [
+        "ZZX",
+        "ZZY"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-10-ZZX-ZH",
+      "day": 10,
+      "pair": [
+        "ZZX",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-10-SXH-ZJ",
+      "day": 10,
+      "pair": [
+        "SXH",
+        "ZJ"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-10-SXH-ZZY",
+      "day": 10,
+      "pair": [
+        "SXH",
+        "ZZY"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-10-SXH-ZH",
+      "day": 10,
+      "pair": [
+        "SXH",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-10-ZJ-ZZY",
+      "day": 10,
+      "pair": [
+        "ZJ",
+        "ZZY"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-10-ZJ-ZH",
+      "day": 10,
+      "pair": [
+        "ZJ",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-10-ZZY-ZH",
+      "day": 10,
+      "pair": [
+        "ZZY",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-12-ZZX-SXH",
+      "day": 12,
+      "pair": [
+        "ZZX",
+        "SXH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-12-ZZX-ZJ",
+      "day": 12,
+      "pair": [
+        "ZZX",
+        "ZJ"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-12-ZZX-ZZY",
+      "day": 12,
+      "pair": [
+        "ZZX",
+        "ZZY"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-12-ZZX-ZH",
+      "day": 12,
+      "pair": [
+        "ZZX",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-12-SXH-ZJ",
+      "day": 12,
+      "pair": [
+        "SXH",
+        "ZJ"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-12-SXH-ZZY",
+      "day": 12,
+      "pair": [
+        "SXH",
+        "ZZY"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-12-SXH-ZH",
+      "day": 12,
+      "pair": [
+        "SXH",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-12-ZJ-ZZY",
+      "day": 12,
+      "pair": [
+        "ZJ",
+        "ZZY"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-12-ZJ-ZH",
+      "day": 12,
+      "pair": [
+        "ZJ",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    },
+    {
+      "name": "day-12-ZZY-ZH",
+      "day": 12,
+      "pair": [
+        "ZZY",
+        "ZH"
+      ],
+      "expect": "at_least_one_allowed_venue_scene_with_no_absent_speaker"
+    }
+  ]
+}

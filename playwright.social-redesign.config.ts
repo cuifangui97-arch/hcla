@@ -1,0 +1,2 @@
+import { defineConfig } from "@playwright/test";
+export default defineConfig({testDir:"tests",testMatch:"social-redesign.spec.ts",timeout:60000,workers:1,reporter:"list",use:{baseURL:"http://127.0.0.1:4194",channel:"msedge",headless:true,viewport:{width:393,height:852},serviceWorkers:"block"},webServer:{command:"node node_modules/vite/bin/vite.js --config vite.runtime.config.ts --configLoader runner --host 127.0.0.1 --port 4194 --strictPort",url:"http://127.0.0.1:4194/tests/fixtures/social-redesign.html",reuseExistingServer:true,timeout:120000}});
