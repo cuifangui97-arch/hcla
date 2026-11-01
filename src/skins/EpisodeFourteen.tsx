@@ -6,7 +6,7 @@ import type { ScriptLine } from "../game/day1-data";
 import { cpPhotos, kcPrivateLetterRowsV165, kcRepairRowsV165, kcRevealCardsV165, modeAwareMemory, seasonEpisodes, seasonSceneLines, xRoomProps } from "../game/season-data";
 import { GuestAvatar } from "../game/GuestAvatar";
 import { SceneChatStream } from "./SceneChatStream";
-import { deriveKcSmsOutcome, kcEmotionalReaction, kcNightClipId, kcNightEventId, kcSmsFlagsFromDeliveries, summarizeKcSmsHistory, type KcNightPlace, type KcSmsArchiveRow, type KcSmsOutcome } from "../game/kc-night";
+import { deriveKcSmsOutcome, kcEmotionalReaction, kcNightClipId, kcNightEventId, kcSmsFlagsFromDeliveries, type KcNightPlace, type KcSmsArchiveRow, type KcSmsOutcome } from "../game/kc-night";
 import { KcNightExperience } from "./KcNightExperience";
 import { selectSmsBatch, smsSemanticEvents, smsUsageFromGameUi, type FrozenSms } from "../game/sms-corpus";
 import { DirectorCutRoom, type CutClip, type CutDraft, type CutStyle } from "./DirectorCutRoom";
@@ -83,9 +83,8 @@ function migrateEp04State(input:State):State {
 function migrateV13State(input:State):State { return migrateLegacyV13EpisodeState(input.episode,input as unknown as Record<string,unknown>) as unknown as State; }
 function parse(v:UiValue|undefined,episode:number):State { if(typeof v==="string"){try{const x=JSON.parse(v) as Partial<State>;if(x&&typeof x==="object"){const merged={...fresh(episode),...x,episode};if(episode===4&&!Object.prototype.hasOwnProperty.call(x,"ep04LetterPhaseCompleted"))delete merged.ep04LetterPhaseCompleted;return migrateV13State(migrateEp04State(merged));}}catch{return migrateV13State(fresh(episode));}}return migrateV13State(fresh(episode)); }
 const pairName=(pair:GuestId[])=>pair.map(x=>guestNames[x]).join(" × ");
-const fixedPairs=(mode:string):string[]=>mode==="A"||mode==="E"?["SXH-ZZX","ZJ-ZZY"]:mode==="B"?["SXH-ZZX","ZH-ZJ"]:mode==="D"?["SXH-ZZX","ZH-ZZY"]:["SXH-ZZX"];
 const idLabel=(id:string)=>id==="gunchan"?"棍铲":id==="jiyu"?"极禹":id==="jihang"?"极航":"芒猴";
-function readKcSmsArchive(p:P):KcSmsArchiveRow[]{
+function _readKcSmsArchive(p:P):KcSmsArchiveRow[]{
  const rows:KcSmsArchiveRow[]=[];
  for(let night=1;night<=12;night++){
   const key=night===1?"day1":`episode${night}`;const raw=p.gameUi?.[key];if(typeof raw!=="string")continue;
@@ -121,8 +120,6 @@ export function EpisodeFourteen({p,appId}:{p:P;appId:string}){
  const save=(next:State)=>p.onGameUi?.(key,JSON.stringify(next));
  const relationshipHistory=readSavedRelationshipHistory(p.state.variables.topSeasonHistory,String(p.state.variables.gameMode??"C"));
  const mode=relationshipHistory.relationshipMode;
- const kcSmsArchive=readKcSmsArchive(p);
- const kcArchiveSignature=kcSmsArchive.map(row=>`${row.episode}:${row.outcome}`).join("|");
   const needsTimelineMigration=episode>=9&&Boolean(rawSaved)&&state.timelineVersion!=="16.1"&&(state.phase!=="story"||state.line>0||state.sent||Boolean(state.broadcastId)||(state.recorded?.length??0)>0);
   const hasKcHistory=relationshipHistory.formalExPairs.some(pair=>[...pair].sort().join("-")==="SXH-ZZX");
   const lines=useMemo(()=>{const base=seasonSceneLines(episode,state.pair,mode,state.choice,relationshipHistory.formalExPairs);if(episode===9&&state.phase==="story")return [{speaker:"STAGE" as const,text:"【EP09｜清晨旅行。两组错峰出发，导演先安排第一组同行嘉宾；没有人会在同一时间出现在两处。】"},{speaker:"ZJ" as const,text:"今天要出门了？我昨晚还在想会不会临时改规则。"},{speaker:"ZZY" as const,text:"你先听完安排再猜。"},{speaker:"ZH" as const,text:"这次有日出吗？"},{speaker:"SXH" as const,text:"先把分组定下来，路线和时间才好安排。"}];if(episode===9&&state.phase==="activity")return base.slice(3);if(episode===10&&state.phase==="kc-recall-play"){const id=state.kcRevealCardSelection?.[state.kcRevealCardIndex??0];return kcRevealCardsV165.find(card=>card.id===id)?.rows??[];}if(episode===10&&state.phase==="kc-letter")return kcPrivateLetterRowsV165;if(episode===10&&state.phase==="kc-repair")return kcRepairRowsV165;return base;},[episode,state.phase,state.line,state.kcRevealCardIndex,state.kcRevealCardSelection?.join("|"),state.pair.join("|"),mode,state.choice,relationshipHistory.formalExPairs]);
@@ -219,7 +216,6 @@ export function EpisodeFourteen({p,appId}:{p:P;appId:string}){
   const subject=readerReaction?`${reader}读信后的反应`:`同桌嘉宾的观察镜头`;
   posts.push({id:`ep04-letter-reaction-${material.recipientId}`,author:String(appId)==="threads"?`cutwatch_${material.recipientId.toLowerCase()}`:String(appId)==="forum"?"镜头观察组":"小屋镜头观察员",title:`EP04｜${subject}`,body:String(appId)==="threads"?`${reaction} 没播正文就先不猜信里写了什么。`:String(appId)==="forum"?`正片只播出${subject}，没有展示正文。镜头记录：${reaction}\n\n因此本帖不引用任何未播出的信件句子，也不据此确认作者。`:`只看到${subject}：${reaction} 正文未播出，不引用信件内容，也不据此确认作者。`,stance:"只据播出画面"});
  }
- const cp=(postId:string)=>postId==="analysis"?(state.pair.length===2?pairName(state.pair):"五人群像"):config.title;
  const assetPhoto=photos.find(x=>x.photoId===selectedPhoto);
 
  if(episode===5&&["camera","reminders","calendar","mail"].includes(appId))return <EpisodeFiveExperience appId={appId} state={state} runtime={p.state} mode={mode} formalExPairs={relationshipHistory.formalExPairs} classic={String(p.state.variables.gameMode??"CLASSIC")!=="AI_FREE"} save={save} onNavigate={p.onNavigate} onBack={()=>p.onBack?.()}/>;

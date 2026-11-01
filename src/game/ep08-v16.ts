@@ -42,9 +42,8 @@ const photoSpecs:{id:Ep08PhotoId;owner:GuestId;title:string;asset:string;cp:stri
  {id:"mh-03",owner:"ZZY",title:"球拍运动",asset:"/assets/cp-photos/manghou/03-rackets.jpg",cp:"manghou",summary:"球拍运动中的双人照片。",lines:["张泽禹：“你们怎么把这个也找来了？”","节目组：“你们俩看着挺认真。”","张泽禹：“比赛的时候确实认真。结束以后就不一定了。”","节目组：“谁输得不服气？”","张泽禹：“这个我不说，留点面子。”"]}
 ];
 const photoSpeakerIds:Record<string,GuestId>={"朱志鑫":"ZZX","苏新皓":"SXH","张极":"ZJ","张泽禹":"ZZY","左航":"ZH"};
-export function ep08PhotoItems():Ep08Item[]{return photoSpecs.map(x=>({id:x.id,owner:x.owner,title:x.title,asset:x.asset,kind:"photo",cp:x.cp,summary:x.summary,lines:x.lines.map(s=>{const i=s.indexOf("：");const speaker=s.slice(0,i).replace(/^[【\[]|[】\]]$/g,"");const text=s.slice(i+1).replace(/^“|”$/g,"");return line(photoSpeakerIds[speaker]??"STAGE",text)}),tags:["photo",x.cp,"shared-growth"]}))}
-export function ep08Items(input:{formalExPairs:GuestId[][];aiFree:boolean}):Ep08Item[]{
- const formal=(a:GuestId,b:GuestId)=>input.formalExPairs.some(pair=>pair.length===2&&pair.includes(a)&&pair.includes(b));
+export function ep08PhotoItems():Ep08Item[]{return photoSpecs.map(x=>({id:x.id,owner:x.owner,title:x.title,asset:x.asset,kind:"photo",cp:x.cp,summary:x.summary,lines:x.lines.map(s=>{const i=s.indexOf("：");const speaker=s.slice(0,i).replace(/^[【[]|[】\]]$/g,"");const text=s.slice(i+1).replace(/^“|”$/g,"");return line(photoSpeakerIds[speaker]??"STAGE",text)}),tags:["photo",x.cp,"shared-growth"]}))}
+export function ep08Items():Ep08Item[]{
   const props:Ep08Item[]=kcCabinetItems.map(item=>({id:item.id,owner:item.owner,title:item.title,asset:item.asset??"",kind:"prop",cp:"gunchan",summary:item.subtitle,lines:item.lines,tags:item.tags}));
   // The twelve photos are documented shared-growth artifacts in every mode. In AI_FREE
  // they remain activity memories; only dialogue that depends on a formal X is gated below.

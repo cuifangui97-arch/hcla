@@ -90,7 +90,6 @@ export function SceneChatStream({ sceneId, rows, shownCount, auto, label, anonym
     onLatest?.();
     followBottom.current = true;
     setShowLatest(false);
-    const el = listRef.current;
     scrollToBottom("smooth");
   };
   const visibleRows = rows.slice(0, shownCount);

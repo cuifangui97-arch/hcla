@@ -3,11 +3,11 @@ import { ArrowRight, Check, Film, Heart, LockKeyhole, RotateCcw, Video } from "l
 import type { Runtime, UiValue, Work, Item } from "../schema";
 import { assets, arrivalScenes, dinnerLines, getXNoticeForInbox, guests, interviewAnswers, interviewQuestions, nightScenes, pairScenes, readSavedRelationshipHistory, type GuestId, type ScriptLine, type SceneScript } from "../game/day1-data";
 import { associatedAudienceShips, buildWeiboDynamics, fingerprintBroadcast, makeSuperTopicPosts, type BroadcastClip, type WeiboDynamics, type WeiboPost } from "../game/weibo-dynamics";
-import { buildSocialBatch, corpusItemTitle, corpusPersonaLabel, corpusReplies, eventsForDayOneClips, type CorpusItem } from "../game/social/corpus";
+import { buildSocialBatch, corpusItemTitle, corpusPersonaLabel, corpusReplies, eventsForDayOneClips } from "../game/social/corpus";
 import type { SkinProps } from "../AppSkins";
 import { GuestAvatar } from "../game/GuestAvatar";
 import { SceneChatStream, sceneSpeakerName } from "./SceneChatStream";
-import { deriveKcSmsOutcome, kcEmotionalReaction, kcNightScript, kcSmsFlagsFromDeliveries, type KcNightPlace, type KcSmsOutcome } from "../game/kc-night";
+import { deriveKcSmsOutcome, kcEmotionalReaction, kcSmsFlagsFromDeliveries, type KcNightPlace, type KcSmsOutcome } from "../game/kc-night";
 import { KcNightExperience } from "./KcNightExperience";
 import { episodeManifest } from "../persistence";
 import { DirectorCutRoom, type CutClip, type CutDraft, type CutStyle } from "./DirectorCutRoom";
@@ -90,11 +90,6 @@ function Header({ label, title, sub }: { label: string; title: string; sub: stri
 }
 function GuestStrip({ ids, active }: { ids: string[]; active: string }) {
   return <div className="d1-guests">{ids.map((id) => { const g = guest(id); return g ? <div key={id} className={`d1-guest ${id === active ? "active" : ""}`}><GuestAvatar id={id as GuestId} className="d1-guest-photo"/><small>{g.name}</small></div> : null; })}</div>;
-}
-function Bubble({ row }: { row: ScriptLine }) {
-  if (row.speaker === "STAGE") return <div className="d1-stage-caption"><span>现场动作 · 字幕</span><p>{row.text}</p></div>;
-  const g = guest(row.speaker);
-  return <article className="d1-bubble-row"><GuestAvatar id={row.speaker as GuestId} className="d1-bubble-avatar"/><div className="d1-bubble-main"><div className="d1-bubble-name">{g?.name}<small>{row.mood ?? "现场对白"}</small></div><div className="d1-bubble"><p>{row.text}</p></div></div></article>;
 }
 function RecordView({ scene, lineIndex, onNext, onBack, onNextScene, guestIds, camera, onCamera, replaying, onPlayPause, auto, onJumpLatest, archiveCount, onOpenArchive }: {
   scene: SceneScript; lineIndex: number; onNext: () => void; onBack?: () => void; onNextScene?: () => void; guestIds: string[]; camera: string; onCamera?: (id: string) => void; replaying?: boolean; onPlayPause?: () => void; auto?: boolean; onJumpLatest?: () => void; archiveCount?: number; onOpenArchive?: () => void;
@@ -476,7 +471,7 @@ function buildAiredClipRows(state: DayOneState): BroadcastClip[] {
   });
 }
 
-function WeiboDynamicPanels({ p, tab, dynamics, clips }: { p: Props; tab: string; dynamics: WeiboDynamics; clips: BroadcastClip[] }) {
+function _WeiboDynamicPanels({ p, tab, dynamics, clips }: { p: Props; tab: string; dynamics: WeiboDynamics; clips: BroadcastClip[] }) {
   const [topicId, setTopicId] = useState("");
   const [superId, setSuperId] = useState("");
   const [postId, setPostId] = useState("");

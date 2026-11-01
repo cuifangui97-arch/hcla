@@ -25,8 +25,7 @@ export function EpisodeEightExperience({p,appId}:{p:P;appId:string}){
  const [imageExpanded,setImageExpanded]=useState(false);
  const key="episode8",raw=p.gameUi?.[key],saved=read(raw);
  const history=readSavedRelationshipHistory(p.state.variables.topSeasonHistory,String(p.state.variables.gameMode??"C"));
- const aiFree=String(p.gameUi?.seasonGameMode??p.state.ui?.game?.seasonGameMode??"")==="AI_FREE";
- const items=useMemo(()=>ep08Items({formalExPairs:history.formalExPairs,aiFree}),[JSON.stringify(history.formalExPairs),aiFree]);
+ const items=useMemo(()=>ep08Items(),[]);
  const save=(next:S)=>p.onGameUi?.(key,JSON.stringify({...next,episode:8,v16EpisodeVersion:"16.5",legacyArchive:{...(next.legacyArchive??{}),deprecatedXroomItemIds:["dried-rose","gc-02","unsent-letter"],migrationFrom:next.v16EpisodeVersion??"unknown"}}));
  const stage=saved.sent?"EDITING":saved.v16Phase??"INTRO";
  const clips=saved.ep08Clips??[];

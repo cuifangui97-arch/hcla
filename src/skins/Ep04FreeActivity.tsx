@@ -61,7 +61,7 @@ export function Ep04FreeActivity({ mode, progress, activeScene, onProgress, onAc
 
   return <main className="ep04-freecam" aria-label="EP04下午自由活动节目监控">
     <header className="ep04-free-head"><div><small>EP.04 · FREE ACTIVITY · 15:30—16:15</small><h1>下午自由活动</h1><p>三段分时拍摄。切换机位会停止当前自动播放，各机位进度独立保存。</p></div><button onClick={onBack}>返回桌面</button></header>
-    <nav className="ep04-free-cameras" aria-label="下午自由活动机位">{scenes.map((row,index)=>{const status=progress[row.id];return <button key={row.id} className={camera===row.id?"active":""} onClick={()=>selectCamera(row.id)}><small>{row.camera} · {row.time}</small><b>{row.title}</b><span>{row.participants.map(id=>names[id]).join(" × ")}</span><i>{status?.complete?"已录完":status?.watched?"录制中":"未观看"}</i></button>;})}</nav>
+    <nav className="ep04-free-cameras" aria-label="下午自由活动机位">{scenes.map((row,_index)=>{const status=progress[row.id];return <button key={row.id} className={camera===row.id?"active":""} onClick={()=>selectCamera(row.id)}><small>{row.camera} · {row.time}</small><b>{row.title}</b><span>{row.participants.map(id=>names[id]).join(" × ")}</span><i>{status?.complete?"已录完":status?.watched?"录制中":"未观看"}</i></button>;})}</nav>
     <section className="ep04-free-screen">
       <div className="ep04-free-visual" style={{backgroundImage:`linear-gradient(0deg,#171319bb,#17131918),url('${assets[scene.background]}')`}}>
         <small>● REC · {scene.id} · {scene.camera}</small><b>{scene.location} · {scene.time}</b>

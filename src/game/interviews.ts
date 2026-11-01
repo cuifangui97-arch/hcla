@@ -21,7 +21,7 @@ export function interviewFor(episode: number, guest: GuestId) {
 }
 
 /** Only known predicates in the delivered corpus are evaluated here; never eval corpus code. */
-export function interviewConditional(entry: InterviewEntry, runtime: Runtime, guest: GuestId): { question:string; answer:string } | undefined {
+export function interviewConditional(entry: InterviewEntry, runtime: Runtime, _guest: GuestId): { question:string; answer:string } | undefined {
   const conditional=entry.conditionalInsert;
   if(!conditional)return;
   const read=(key:string):Record<string,unknown>=>{

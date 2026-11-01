@@ -2,8 +2,8 @@ import { describe, expect, it } from "vitest";
 import { arrivalScenes, formalXPairs, getXNotice, guests, nightScenes, pairScenes, validDayOneClipSet } from "./day1-data";
 import { originalIconFiles } from "../ios/originalIconFiles";
 import iconManifest from "../../assets/app-icons/manifest.json";
-import branchSource from "../../source_package/03_branch/branch_pack_v3.json";
-import smsSource from "../../source_package/04_sms_social/sms_social_pack_v4.json";
+import branchSource from "../../stories/source/branch_pack_v3.json";
+import smsSource from "../../stories/source/sms_social_pack_v4.json";
 
 describe("Day 1 authored episode data", () => {
   it("has exactly the five approved guests and five chronological arrival scenes", () => {

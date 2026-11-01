@@ -60,7 +60,6 @@ const rolePersona: Record<string, string> = {
   skeptic: "archivist", meme_fan: "shipper", editorial_critic: "cut_critic",
 };
 const platformNames: Record<SocialPlatform, string> = { weibo: "微博", douban: "豆瓣", threads: "Threads" };
-const platformPrefixes: Record<SocialPlatform, string> = { weibo: "wb", douban: "db", threads: "th" };
 const personaHandles: Record<string, Record<SocialPlatform, [string, string]>> = {
   gc_fan: { weibo: ["ganchan_note", "棍铲日常簿"], douban: ["ganchan_archive", "棍铲镜头档案"], threads: ["gc_framebyframe", "gc frame note"] },
   jy_fan: { weibo: ["jiyu_timeline", "极禹时间线"], douban: ["jiyu_evidence", "极禹证据整理"], threads: ["jy_rewatch", "jy on replay"] },

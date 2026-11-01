@@ -9,7 +9,7 @@ const choices = (targets: GuestId[]): Ep08ChoiceMap => Object.fromEntries(ep08Gu
 
 describe("V16.5 X Room and anonymous mutual choice", () => {
   it("keeps two independent six-item KC cabinets and all other-pair photos", () => {
-    const items = ep08Items({ formalExPairs: formalXPairs.A, aiFree: false });
+    const items = ep08Items();
     const photos = items.filter(item => item.kind === "photo");
     expect(photos).toHaveLength(9);
     expect(kcCabinetItems.filter(item => item.owner === "ZZX")).toHaveLength(6);
@@ -21,7 +21,7 @@ describe("V16.5 X Room and anonymous mutual choice", () => {
   });
 
   it("gives each displayed memory item a unique beat and its own interview; supplies no fabricated photo for a personal card", () => {
-    const items=ep08Items({formalExPairs:formalXPairs.A,aiFree:false});
+    const items=ep08Items();
     const memoryTexts=items.map(item=>itemRoomLines(item,formalXPairs.A,"A").map(row=>row.speaker+":"+row.text).join("\n"));
     const interviewTexts=items.map(item=>ep08ItemInterviewRows(item,formalXPairs.A,"A").map(row=>row.speaker+":"+row.text).join("\n"));
     expect(new Set(items.map(item=>item.id)).size).toBe(items.length);
@@ -37,7 +37,7 @@ describe("V16.5 X Room and anonymous mutual choice", () => {
   });
 
   it("provides one playable memory room for each guest without fabricating exes in free mode", () => {
-    const items = ep08Items({ formalExPairs: [], aiFree: true });
+    const items = ep08Items();
     for (const id of ep08GuestOrder) expect(items.some(item => item.owner === id)).toBe(true);
     expect(items.filter(item => item.id.startsWith("personal-reflection-")).length).toBe(0);
     expect(items.some(item => item.id === "dried-rose" || item.id === "unsent-letter" || item.id === "birthday-blindbox")).toBe(false);

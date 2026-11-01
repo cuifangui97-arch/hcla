@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight, LockKeyhole, Send, Video } from "lucide-react";
+import { ArrowRight, LockKeyhole, Send } from "lucide-react";
 import type { Item, Runtime, UiValue, Work } from "../schema";
 import type { SkinProps } from "../AppSkins";
 import { GuestAvatar } from "../game/GuestAvatar";
