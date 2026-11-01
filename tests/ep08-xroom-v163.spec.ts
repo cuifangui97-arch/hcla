@@ -17,8 +17,8 @@ test("the V16.5 original images load in the real browser; missing peach candy st
   });
   expect(result).toHaveLength(20);
   expect(result.filter(row => !row.ok || !row.type?.startsWith("image/") || !row.width || !row.height)).toEqual([]);
-  expect(result.filter(row => row.src.startsWith("/assets/ep08-kc/")).map(row => row.src)).toHaveLength(11);
-  expect(result.filter(row => row.src.startsWith("/assets/cp-photos/")).map(row => row.src)).toHaveLength(9);
+  expect(result.filter(row => row.src.startsWith("./assets/ep08-kc/")).map(row => row.src)).toHaveLength(11);
+  expect(result.filter(row => row.src.startsWith("./assets/cp-photos/")).map(row => row.src)).toHaveLength(9);
 });
 
 test("X Room shows V16.5 cabinet originals, independent dialogue and interview, and replays idempotently", async ({ page }) => {

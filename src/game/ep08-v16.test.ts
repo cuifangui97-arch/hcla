@@ -17,7 +17,7 @@ describe("V16.5 X Room and anonymous mutual choice", () => {
     expect(kcCabinetItems.map(item => item.id)).not.toContain("ZZ_CORRIDOR");
     const available=kcCabinetItems.filter(item=>item.asset);
     expect(available).toHaveLength(11);
-    for (const item of [...photos,...available]) expect(assetFiles.some(path => path.endsWith(item.asset!.replace(/^\//, "")))).toBe(true);
+    for (const item of [...photos,...available]) expect(assetFiles.some(path => path.endsWith(item.asset!.replace(/^(?:\.\/|\/)/, "")))).toBe(true);
   });
 
   it("gives each displayed memory item a unique beat and its own interview; supplies no fabricated photo for a personal card", () => {

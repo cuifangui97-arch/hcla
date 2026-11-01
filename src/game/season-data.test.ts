@@ -19,7 +19,7 @@ describe("EP04–EP14 season package",()=>{
     expect(cpPhotos).toHaveLength(12);
     expect(new Set(cpPhotos.map(x=>x.cpId))).toEqual(new Set(["gunchan","jiyu","jihang","manghou"]));
     for(const photo of cpPhotos){
-      expect(assetKeys.some(key=>key.endsWith(photo.assetPath.replace(/^\//,"")))).toBe(true);
+      expect(assetKeys.some(key=>key.endsWith(photo.assetPath.replace(/^(?:\.\/|\/)/,"")))).toBe(true);
       expect(photo.viewed).toBe(false);
       expect(photo.recorded).toBe(false);
       expect(photo.aired).toBe(false);
@@ -68,7 +68,7 @@ describe("EP04–EP14 season package",()=>{
     const letter=xRoomProps[0];
     expect(letter.body).toContain("我不是不想告诉你。");
     expect(letter.body).toContain("你不用急着给答案，我也不能拿沉默当答案。");
-    for(const item of xRoomProps)expect(assetKeys.some(key=>key.endsWith(item.image.replace(/^\//,"")))).toBe(true);
+    for(const item of xRoomProps)expect(assetKeys.some(key=>key.endsWith(item.image.replace(/^(?:\.\/|\/)/,"")))).toBe(true);
     const letterRows=kcPrivateLetterRowsV165.map(row=>row.text).join(" ");
     const cards=kcRevealCardsV165.flatMap(card=>card.rows).map(row=>row.text).join(" ");
     expect(letterRows).toContain(letter.body);
