@@ -21,3 +21,5 @@ The Pexels images are environment backdrops, not cast likenesses. The five cropp
 ## Season archive additions
 
 The twelve CP memory photographs and four X Room prop images under `cp-photos/` and `props/` are copies of user-provided files from `Desktop/棍铲/换乘恋爱/回忆照片` and `Desktop/棍铲/换乘恋爱/道具`. The source files were left in place. Their visual content is shown as supplied; unclear handwritten text, dates, flight numbers, and private relationship claims are not inferred from the images.
+
+`ep08-kc/sx-peach-gummies.jpg` is the user-provided `软糖.jpg` from `Desktop/棍铲/换乘恋爱/道具`, added to Su Xinhao's EP08 memory cabinet.

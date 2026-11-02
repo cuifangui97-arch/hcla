@@ -16,7 +16,8 @@ describe("V16.5 X Room and anonymous mutual choice", () => {
     expect(kcCabinetItems.filter(item => item.owner === "SXH")).toHaveLength(6);
     expect(kcCabinetItems.map(item => item.id)).not.toContain("ZZ_CORRIDOR");
     const available=kcCabinetItems.filter(item=>item.asset);
-    expect(available).toHaveLength(11);
+    expect(available).toHaveLength(12);
+    expect(kcCabinetItems.find(item=>item.id==="SX_PEACH_CANDY")?.asset).toBe("./assets/ep08-kc/sx-peach-gummies.jpg");
     for (const item of [...photos,...available]) expect(assetFiles.some(path => path.endsWith(item.asset!.replace(/^(?:\.\/|\/)/, "")))).toBe(true);
   });
 
@@ -27,7 +28,7 @@ describe("V16.5 X Room and anonymous mutual choice", () => {
     expect(new Set(items.map(item=>item.id)).size).toBe(items.length);
     expect(new Set(memoryTexts).size).toBe(items.length);
     expect(new Set(interviewTexts).size).toBe(items.length);
-    expect(items.filter(item=>item.asset)).toHaveLength(20);
+    expect(items.filter(item=>item.asset)).toHaveLength(21);
     expect(items.find(item=>item.id==="ZZ_BLINDBOX")?.summary).not.toContain("苏新皓");
     expect(items.find(item=>item.id==="ZZ_BLINDBOX")?.lines.map(row=>row.text).join(" ")).toContain("每年生日拆一个");
     expect(items.find(item=>item.id==="ZZ_WATER_VOUCHER")?.lines.map(row=>row.text).join(" ")).toContain("2025过生日");

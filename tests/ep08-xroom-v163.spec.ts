@@ -3,7 +3,7 @@ import { expect, test } from "@playwright/test";
 
 mkdirSync("screenshots/ep08-v165", { recursive: true });
 
-test("the V16.5 original images load in the real browser; missing peach candy stays an explicit placeholder", async ({ page }) => {
+test("the V16.5 original images load in the real browser, including Su Xinhao's peach gummies", async ({ page }) => {
   await page.goto("/tests/fixtures/ep08-xroom.html");
   const result = await page.evaluate(async () => {
     const paths = window.__ep08Assets;
@@ -15,9 +15,10 @@ test("the V16.5 original images load in the real browser; missing peach candy st
     }));
     return responses;
   });
-  expect(result).toHaveLength(20);
+  expect(result).toHaveLength(21);
   expect(result.filter(row => !row.ok || !row.type?.startsWith("image/") || !row.width || !row.height)).toEqual([]);
-  expect(result.filter(row => row.src.startsWith("./assets/ep08-kc/")).map(row => row.src)).toHaveLength(11);
+  expect(result.filter(row => row.src.startsWith("./assets/ep08-kc/")).map(row => row.src)).toHaveLength(12);
+  expect(result.find(row => row.src.endsWith("/sx-peach-gummies.jpg"))).toMatchObject({ok:true,width:1008,height:692});
   expect(result.filter(row => row.src.startsWith("./assets/cp-photos/")).map(row => row.src)).toHaveLength(9);
 });
 
