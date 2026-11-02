@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { canonicalV13Episodes, isValidPairing, migrateLegacyV13EpisodeState, resolveV13Stage, v13DeprecatedSceneAliases } from "./canonical-v13";
+import { ep05ClipIds, ep05Pairs, type Ep05Round } from "./ep05-eye-contact";
 
 describe("V13 canonical episode flow",()=>{
   it("registers one forward-only manifest for each EP05-EP14",()=>{
@@ -27,11 +28,24 @@ describe("V13 canonical episode flow",()=>{
     expect(migrateLegacyV13EpisodeState(6,migrated)).toEqual(migrated);
     expect(migrateLegacyV13EpisodeState(4,legacy)).toBe(legacy);
     const ep05Mainline={phase:"activity",ep05Stage:"NIGHT",ep05NightIndex:0,recorded:["D05-KC-ATTEMPT-EXPLANATION"]};
-    expect(migrateLegacyV13EpisodeState(5,ep05Mainline)).toBe(ep05Mainline);
+    expect(migrateLegacyV13EpisodeState(5,ep05Mainline)).toMatchObject({phase:"story",ep05Stage:"BREAKFAST",recorded:ep05Mainline.recorded});
+  });
+  it("recovers EP05 from real missing scenes instead of treating delivered SMS as completed filming",()=>{
+    const legacy={phase:"sms",sent:true,sms:{ZZX:"SXH"},smsFrozen:{ZZX:{body:"frozen"}},recorded:[],relationshipMode:"B",formalExPairs:[["ZJ","ZH"]]};
+    const recovered=migrateLegacyV13EpisodeState(5,legacy);
+    expect(recovered).toMatchObject({phase:"story",ep05Stage:"BREAKFAST",sent:true,sms:legacy.sms,smsFrozen:legacy.smsFrozen,relationshipMode:"B",formalExPairs:legacy.formalExPairs,auto:false});
+
+    const makeRound=(index:number):Ep05Round=>{const pair=ep05Pairs()[index].ids;return {roundId:index===0?"round1":"round2",pairIds:[...pair],preparationCompleted:true,timerStarted:true,timerFinished:true,taskOutcome:"done",dialogueProgress:{ready:1,eye:1,after:1},completionStatus:"completed",generatedClipIds:Object.values(ep05ClipIds([...pair],index+1))};};
+    const rounds=[makeRound(0),makeRound(1)];
+    const recorded=["D05-001","D05-002",...rounds.flatMap(round=>round.generatedClipIds),"D05-007","D05-BONUS-NOTE","D05-KC-ATTEMPT-EXPLANATION","EP05_INTERVIEW_ZZX","EP05_INTERVIEW_SXH"];
+    const complete=migrateLegacyV13EpisodeState(5,{phase:"sms",sent:true,recorded,ep05Rounds:rounds,ep05BonusOption:"notes",ep05InterviewGuests:["ZZX","SXH"],interviewProgress:{ZZX:{finished:true},SXH:{finished:true}},sms:{ZZX:"SXH"}});
+    expect(complete).toMatchObject({phase:"edit",ep05Stage:"EDITING",sent:true,recorded});
+    expect(resolveV13Stage(5,{phase:"sms",sent:true,recorded:[],sms:{ZZX:"SXH"}})).toBe("BREAKFAST");
   });
   it("resumes delivered legacy SMS at the editor and maps migration aliases",()=>{
     expect(resolveV13Stage(6,{phase:"kcNight",sent:true})).toBe("EDITING");
-    for(let episode=5;episode<=14;episode++)if(episode!==7)expect(resolveV13Stage(episode,{phase:"kcNight",sent:true})).toBe(episode===14?"FINAL_CUT":"EDITING");
+    expect(resolveV13Stage(5,{phase:"kcNight",sent:true,recorded:[]})).toBe("BREAKFAST");
+    for(let episode=6;episode<=14;episode++)if(episode!==7)expect(resolveV13Stage(episode,{phase:"kcNight",sent:true})).toBe(episode===14?"FINAL_CUT":"EDITING");
     expect(resolveV13Stage(7,{phase:"edit",sent:true})).toBe("INTRO");
     expect(resolveV13Stage(7,{phase:"edit",sent:true,ep07CompletedSceneIds:["D07-001","D07-002"],profileOrder:["ZZX","SXH","ZJ","ZZY","ZH"],rolePlan:{},ep07Stage:"SMS"})).toBe("RHYTHM");
     expect(resolveV13Stage(7,{phase:"edit",sent:true,ep07CompletedSceneIds:["D07-001","D07-002","D07-004","D07-005","D07-006","D07-007","D07-008","D07-009","D07-010"],rolePlan:{},ep07Stage:"EDITING"})).toBe("EDITING");

@@ -1,5 +1,6 @@
 import type { GuestId } from "./day1-data";
 import { kcCabinetItems } from "./ep08-kc-v165";
+import { ep05MissingStage, type Ep05Round, type Ep05Stage } from "./ep05-eye-contact";
 
 /** Runtime scene registry: EP05-EP07 from canonical V13, EP08 from V16.3, EP09-10 from the 10-day season. */
 export type V13Scene = { id: string; phase: string; title: string; next?: string; required: boolean; clipIds: string[] };
@@ -55,6 +56,17 @@ export function resolveV13Stage(episode:number,state:Record<string,unknown>):str
   const flow=canonicalV13Episodes.find(row=>row.episode===episode)?.scenes??[]; if(!flow.length)return "";
   const phase=String(state.phase??"");
   if(phase==="complete")return "COMPLETE";
+  if(episode===5){
+    if(state.broadcastId||phase==="social")return "BROADCAST";
+    const rounds=Array.isArray(state.ep05Rounds)?state.ep05Rounds as Ep05Round[]:[];
+    const recorded=Array.isArray(state.recorded)?state.recorded as string[]:[];
+    const interviewClipCount=new Set(recorded.filter(id=>/^EP05_INTERVIEW_(ZZX|SXH|ZJ|ZZY|ZH)$/.test(id))).size;
+    const missing=ep05MissingStage({recorded,rounds,bonusOption:state.ep05BonusOption as "anonymousCards"|"replay"|"notes"|undefined,bonusClipId:state.ep05BonusClipId as string|undefined,interviewClipCount});
+    if(missing)return missing;
+    if(state.sent===true)return "EDITING";
+    if(phase==="sms")return "SMS";
+    return typeof state.ep05Stage==="string"&&flow.some(item=>item.id===`EP05-${state.ep05Stage}`)?String(state.ep05Stage):"BREAKFAST";
+  }
   if(episode===6&&typeof state.ep06Stage==="string")return state.ep06Stage;
   if(episode===8){const stage=String(state.v16Phase??"");if(flow.some(item=>item.id===`EP08-${stage}`))return stage;if(state.broadcastId)return "BROADCAST";if(state.sent===true)return "EDITING";return "INTRO";}
   if(episode===7){
@@ -92,6 +104,19 @@ export function nextV13Stage(episode:number,stage:string):string|undefined { ret
 export function isValidPairing(groups:GuestId[][]):boolean { const all=groups.flat(); return all.every(id=>["ZZX","SXH","ZJ","ZZY","ZH"].includes(id)) && new Set(all).size===all.length; }
 export function migrateLegacyV13EpisodeState<T extends Record<string,unknown>>(episode:number,state:T):T {
   if(episode<5)return state;
+  if(episode===5){
+    const rounds=Array.isArray(state.ep05Rounds)?state.ep05Rounds as Ep05Round[]:[];
+    const recorded=Array.isArray(state.recorded)?state.recorded as string[]:[];
+    const interviewClipCount=new Set(recorded.filter(id=>/^EP05_INTERVIEW_(ZZX|SXH|ZJ|ZZY|ZH)$/.test(id))).size;
+    const missing=ep05MissingStage({recorded,rounds,bonusOption:state.ep05BonusOption as "anonymousCards"|"replay"|"notes"|undefined,bonusClipId:state.ep05BonusClipId as string|undefined,interviewClipCount});
+    const phase=String(state.phase??"");
+    const normalized=String(state.ep05Stage??"");
+    const needsRepair=Boolean(missing&&(state.sent===true||phase==="sms"||phase==="edit"||phase==="kcNight"||phase==="postSms"||normalized==="EDITING"));
+    const stage:Ep05Stage=state.broadcastId||phase==="social"?"BROADCAST":phase==="complete"?"COMPLETE":missing??(state.sent===true?"EDITING":phase==="sms"?"SMS":(normalized as Ep05Stage)||"BREAKFAST");
+    const phaseByStage:Record<Ep05Stage,string>={BREAKFAST:"story",INTRO:"story",ROUND1_SELECTION:"decision",ROUND1_PLAY:"activity",ROUND2_SELECTION:"decision",ROUND2_PLAY:"activity",GROUP_REACTION:"activity",BONUS_SELECTION:"decision",BONUS_PLAY:"activity",EVENING:"activity",INTERVIEW:"interview",SMS:"sms",EDITING:"edit",BROADCAST:"social",COMPLETE:"complete"};
+    if(needsRepair||state.ep05Stage!==stage||state.phase!==phaseByStage[stage])return {...state,ep05Stage:stage,phase:phaseByStage[stage],auto:false,...(needsRepair?{v13Migration:{from:phase,to:phaseByStage[stage],reason:"EP05 resumed from actual recorded scenes"}}:{})} as T;
+    return state;
+  }
   const frozen=state.smsFrozen&&typeof state.smsFrozen==="object"&&Object.keys(state.smsFrozen as object).length>0;
   const delivered=state.sent===true||Boolean(frozen)||state.ep05SmsCompleted===true;
   const normalizedPhase=String(state.phase??"").toLowerCase().replace(/[^a-z]/g,"");

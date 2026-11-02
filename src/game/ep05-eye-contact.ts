@@ -86,6 +86,43 @@ export function ep05ClipIds(ids:GuestId[],round:number):Record<Ep05Segment,strin
  if(legacy)return legacy;
  return {ready:`D05-R${round}-${script.code}-READY`,eye:`D05-R${round}-${script.code}-EYE`,after:`D05-R${round}-${script.code}-AFTER`};
 }
+
+export type Ep05ProgressSnapshot = {
+ recorded?: string[];
+ rounds?: Ep05Round[];
+ bonusOption?: "anonymousCards"|"replay"|"notes";
+ bonusClipId?: string;
+ interviewClipCount?: number;
+};
+
+/** Return the earliest EP05 stage with a required scene or real clip still missing. */
+export function ep05MissingStage(progress:Ep05ProgressSnapshot):Ep05Stage|null {
+ const recorded=new Set(progress.recorded??[]);
+ const rounds=progress.rounds??[];
+ const has=(id:string)=>recorded.has(id)||rounds.some(round=>round.generatedClipIds.includes(id));
+ if(!has("D05-001"))return "BREAKFAST";
+ if(!has("D05-002"))return "INTRO";
+ for(let index=0;index<2;index++){
+  const round=rounds[index];
+  if(!round)return index===0?"ROUND1_SELECTION":"ROUND2_SELECTION";
+  const number=index+1;
+  if(round.pairIds.length!==2||round.pairIds[0]===round.pairIds[1])return index===0?"ROUND1_SELECTION":"ROUND2_SELECTION";
+  if(round.completionStatus!=="completed")return index===0?"ROUND1_PLAY":"ROUND2_PLAY";
+  if((Object.values(ep05ClipIds(round.pairIds,number)) as string[]).some(id=>!has(id)))return index===0?"ROUND1_PLAY":"ROUND2_PLAY";
+ }
+ if(!has("D05-007"))return "GROUP_REACTION";
+ if(!progress.bonusOption)return "BONUS_SELECTION";
+ const bonusId=progress.bonusOption==="anonymousCards"?"D05-BONUS-ANON-CARDS":progress.bonusOption==="replay"?"D05-BONUS-REPLAY":"D05-BONUS-NOTE";
+ if(!has(bonusId))return "BONUS_PLAY";
+ if(!has("D05-KC-ATTEMPT-EXPLANATION"))return "EVENING";
+ if((progress.interviewClipCount??0)<2)return "INTERVIEW";
+ return null;
+}
+
+export function ep05FirstUnrecordedSegment(round:Ep05Round,roundNumber:number,recorded:string[]):Ep05Segment {
+ const ids=ep05ClipIds(round.pairIds,roundNumber);
+ return (["ready","eye","after"] as const).find(segment=>!recorded.includes(ids[segment])&&!round.generatedClipIds.includes(ids[segment]))??"after";
+}
 export const ep05BonusScripts={
  anonymousCards:[S("【请每位嘉宾写下今天最意外的一位任务搭档，以及一句理由。】"),L("ZJ","这个要给别人看吗？"),L("SXH","应该是匿名的。"),L("ZJ","那我放心了。"),L("ZH","你准备写谁？"),L("ZJ","都匿名了我还能告诉你？"),L("ZZY","那你刚刚问得挺积极。"),L("ZZX","他想知道别人写了谁。"),S("【五人分别完成卡片。卡片候选只来自今日真实任务参与记录。】")],
  replay:[S("【现在播放今天的一段对视花絮。】"),L("ZZY","怎么还带回放的？"),L("ZJ","节目组很会抓重点。"),L("SXH","我看看放哪段。"),L("ZH","不会又放你笑吧？"),L("ZJ","不要诅咒我。"),S("【屏幕播放导演实际选中的已录制任务片段。】"),L("ZZX","这角度怎么看着这么近。"),L("ZZY","本来就坐得近。"),L("ZJ","从屏幕上看真的更好笑。")],
